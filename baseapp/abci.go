@@ -20,7 +20,7 @@ import (
 
 	"github.com/Finschia/finschia-sdk/codec"
 	snapshottypes "github.com/Finschia/finschia-sdk/snapshots/types"
-	"github.com/Finschia/finschia-rdk/telemetry"
+	"github.com/Finschia/finschia-sdk/telemetry"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	ocabci "github.com/Finschia/ostracon/abci/types"

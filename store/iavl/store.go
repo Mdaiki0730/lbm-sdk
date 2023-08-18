@@ -18,7 +18,7 @@ import (
 	"github.com/Finschia/finschia-rdk/store/listenkv"
 	"github.com/Finschia/finschia-rdk/store/tracekv"
 	"github.com/Finschia/finschia-sdk/store/types"
-	"github.com/Finschia/finschia-rdk/telemetry"
+	"github.com/Finschia/finschia-sdk/telemetry"
 	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-sdk/types/kv"
 )
