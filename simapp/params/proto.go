@@ -6,7 +6,7 @@ package params
 import (
 	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-sdk/codec/types"
-	"github.com/Finschia/finschia-rdk/x/auth/tx"
+	"github.com/Finschia/finschia-sdk/x/auth/tx"
 )
 
 // MakeTestEncodingConfig creates an EncodingConfig for a non-amino based test configuration.

@@ -10,7 +10,7 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/Finschia/finschia-rdk/client/grpc/reflection"
+	"github.com/Finschia/finschia-sdk/client/grpc/reflection"
 	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	sdk "github.com/Finschia/finschia-sdk/types"
 )

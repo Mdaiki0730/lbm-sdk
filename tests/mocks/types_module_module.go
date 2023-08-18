@@ -8,7 +8,7 @@ import (
 	json "encoding/json"
 	reflect "reflect"
 
-	client "github.com/Finschia/finschia-rdk/client"
+	client "github.com/Finschia/finschia-sdk/client"
 	codec "github.com/Finschia/finschia-sdk/codec"
 	types "github.com/Finschia/finschia-sdk/codec/types"
 	types0 "github.com/Finschia/finschia-sdk/types"

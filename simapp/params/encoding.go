@@ -1,7 +1,7 @@
 package params
 
 import (
-	"github.com/Finschia/finschia-rdk/client"
+	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-sdk/codec/types"
 )

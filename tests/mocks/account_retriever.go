@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	client "github.com/Finschia/finschia-rdk/client"
+	client "github.com/Finschia/finschia-sdk/client"
 	types "github.com/Finschia/finschia-sdk/crypto/types"
 	types0 "github.com/Finschia/finschia-sdk/types"
 	gomock "github.com/golang/mock/gomock"

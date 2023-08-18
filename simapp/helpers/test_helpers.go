@@ -4,12 +4,12 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/Finschia/finschia-rdk/client"
+	"github.com/Finschia/finschia-sdk/client"
 	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-sdk/types/tx/signing"
-	authsign "github.com/Finschia/finschia-rdk/x/auth/signing"
+	authsign "github.com/Finschia/finschia-sdk/x/auth/signing"
 )
 
 // SimAppChainID hardcoded chainID for simulation

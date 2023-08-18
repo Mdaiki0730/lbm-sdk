@@ -15,11 +15,11 @@ import (
 
 	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-sdk/codec/legacy"
-	"github.com/Finschia/finschia-rdk/server/config"
+	"github.com/Finschia/finschia-sdk/server/config"
 	"github.com/Finschia/finschia-sdk/snapshots"
 	store "github.com/Finschia/finschia-sdk/store/types"
 	sdk "github.com/Finschia/finschia-sdk/types"
-	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
+	"github.com/Finschia/finschia-sdk/x/auth/legacy/legacytx"
 )
 
 var (
