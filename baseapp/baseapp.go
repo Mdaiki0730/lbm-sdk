@@ -18,6 +18,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/store"
 	"github.com/Finschia/finschia-rdk/store/rootmulti"
+	sdkbaseapp "github.com/Finschia/finschia-sdk/baseapp"
 	"github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-sdk/server/config"
 	"github.com/Finschia/finschia-sdk/snapshots"
@@ -125,10 +126,10 @@ type appStore struct {
 }
 
 type moduleRouter struct {
-	router           sdk.Router        // handle any kind of message
-	queryRouter      sdk.QueryRouter   // router for redirecting query calls
-	grpcQueryRouter  *GRPCQueryRouter  // router for redirecting gRPC query calls
-	msgServiceRouter *MsgServiceRouter // router for redirecting Msg service messages
+	router           sdk.Router                   // handle any kind of message
+	queryRouter      sdk.QueryRouter              // router for redirecting query calls
+	grpcQueryRouter  *GRPCQueryRouter             // router for redirecting gRPC query calls
+	msgServiceRouter *sdkbaseapp.MsgServiceRouter // router for redirecting Msg service messages
 }
 
 type abciData struct {
@@ -179,7 +180,7 @@ func NewBaseApp(
 			router:           NewRouter(),
 			queryRouter:      NewQueryRouter(),
 			grpcQueryRouter:  NewGRPCQueryRouter(),
-			msgServiceRouter: NewMsgServiceRouter(),
+			msgServiceRouter: sdkbaseapp.NewMsgServiceRouter(),
 		},
 		txDecoder:       txDecoder,
 		checkAccountWGs: NewAccountWGs(),
@@ -232,7 +233,7 @@ func (app *BaseApp) Trace() bool {
 }
 
 // MsgServiceRouter returns the MsgServiceRouter of a BaseApp.
-func (app *BaseApp) MsgServiceRouter() *MsgServiceRouter { return app.msgServiceRouter }
+func (app *BaseApp) MsgServiceRouter() *sdkbaseapp.MsgServiceRouter { return app.msgServiceRouter }
 
 // MountStores mounts all IAVL or DB stores to the provided keys in the BaseApp
 // multistore.
