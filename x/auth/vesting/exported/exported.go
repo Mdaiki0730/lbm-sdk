@@ -5,7 +5,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // VestingAccount defines an account type that vests coins via a vesting schedule.

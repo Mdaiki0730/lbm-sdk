@@ -13,8 +13,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
 	authkeeper "github.com/Finschia/finschia-rdk/x/auth/keeper"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/auth/vesting/exported"

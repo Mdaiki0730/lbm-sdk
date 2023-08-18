@@ -3,9 +3,9 @@ package keeper
 import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/params/types"
 	"github.com/Finschia/finschia-rdk/x/params/types/proposal"
 )

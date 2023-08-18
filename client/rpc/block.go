@@ -9,7 +9,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/codec/legacy"
+	"github.com/Finschia/finschia-sdk/codec/legacy"
 )
 
 // BlockCommand returns the verified block data for a given heights

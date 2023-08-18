@@ -10,8 +10,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/x/distribution/types"
 	"github.com/Finschia/finschia-rdk/x/staking"
 	"github.com/Finschia/finschia-rdk/x/staking/teststaking"

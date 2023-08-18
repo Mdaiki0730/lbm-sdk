@@ -1,7 +1,7 @@
 package collection
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 type (

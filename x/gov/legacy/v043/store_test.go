@@ -10,7 +10,7 @@ import (
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v040gov "github.com/Finschia/finschia-rdk/x/gov/legacy/v040"
 	v043gov "github.com/Finschia/finschia-rdk/x/gov/legacy/v043"
 	"github.com/Finschia/finschia-rdk/x/gov/types"

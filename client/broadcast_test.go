@@ -13,7 +13,7 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/Finschia/finschia-rdk/client/flags"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 type MockClient struct {

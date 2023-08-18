@@ -4,9 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Finschia/finschia-rdk/crypto/keys/secp256k1"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 
 	"github.com/Finschia/ostracon/crypto"

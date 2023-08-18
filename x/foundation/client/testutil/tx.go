@@ -7,8 +7,8 @@ import (
 	"github.com/Finschia/finschia-rdk/client/flags"
 	clitestutil "github.com/Finschia/finschia-rdk/testutil/cli"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	txtypes "github.com/Finschia/finschia-rdk/types/tx"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	txtypes "github.com/Finschia/finschia-sdk/types/tx"
 	"github.com/Finschia/finschia-rdk/x/foundation"
 	"github.com/Finschia/finschia-rdk/x/foundation/client/cli"
 )

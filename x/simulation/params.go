@@ -9,8 +9,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/types/simulation"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/types/simulation"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"
 )
 

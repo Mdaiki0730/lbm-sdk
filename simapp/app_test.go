@@ -16,8 +16,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	"github.com/Finschia/finschia-rdk/tests/mocks"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/module"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
 	"github.com/Finschia/finschia-rdk/x/auth"
 	"github.com/Finschia/finschia-rdk/x/auth/vesting"
 	authz_m "github.com/Finschia/finschia-rdk/x/authz/module"

@@ -3,8 +3,8 @@ package token
 import (
 	"math"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 // ValidateGenesis check the given genesis state has no integrity issues

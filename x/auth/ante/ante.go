@@ -1,9 +1,9 @@
 package ante
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authsigning "github.com/Finschia/finschia-rdk/x/auth/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 )

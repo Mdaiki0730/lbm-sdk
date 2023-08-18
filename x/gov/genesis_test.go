@@ -12,7 +12,7 @@ import (
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	banktypes "github.com/Finschia/finschia-rdk/x/bank/types"

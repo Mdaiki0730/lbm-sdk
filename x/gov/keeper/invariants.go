@@ -5,7 +5,7 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

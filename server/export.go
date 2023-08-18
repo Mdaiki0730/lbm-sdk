@@ -13,7 +13,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/server/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 const (

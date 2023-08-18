@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 
 	"github.com/Finschia/finschia-rdk/client"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 )
 
 // DONTCOVER

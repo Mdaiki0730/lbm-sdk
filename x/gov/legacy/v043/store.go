@@ -3,10 +3,10 @@ package v043
 import (
 	"fmt"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/address"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/address"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

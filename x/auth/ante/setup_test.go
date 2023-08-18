@@ -1,10 +1,10 @@
 package ante_test
 
 import (
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/auth/ante"
 )
 

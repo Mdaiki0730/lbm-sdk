@@ -6,8 +6,8 @@ package testdata
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	tx "github.com/Finschia/finschia-rdk/types/tx"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	tx "github.com/Finschia/finschia-sdk/types/tx"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"

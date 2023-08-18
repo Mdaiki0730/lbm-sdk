@@ -12,9 +12,9 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/rpc"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	qtypes "github.com/Finschia/finschia-rdk/types/query"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	qtypes "github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/version"
 )
 

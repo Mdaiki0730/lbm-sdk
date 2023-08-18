@@ -3,9 +3,9 @@ package foundation
 import (
 	"github.com/gogo/protobuf/proto"
 
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 )
 

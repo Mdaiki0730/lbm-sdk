@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authtx "github.com/Finschia/finschia-rdk/x/auth/tx"
 
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
@@ -15,11 +15,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/server/rosetta"
 	crgerrs "github.com/Finschia/finschia-rdk/server/rosetta/lib/errors"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authsigning "github.com/Finschia/finschia-rdk/x/auth/signing"
 	bank "github.com/Finschia/finschia-rdk/x/bank/types"
 )

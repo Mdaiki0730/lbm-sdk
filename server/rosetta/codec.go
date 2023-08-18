@@ -1,9 +1,9 @@
 package rosetta
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	cryptocodec "github.com/Finschia/finschia-rdk/crypto/codec"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	cryptocodec "github.com/Finschia/finschia-sdk/crypto/codec"
 	authcodec "github.com/Finschia/finschia-rdk/x/auth/types"
 	bankcodec "github.com/Finschia/finschia-rdk/x/bank/types"
 )

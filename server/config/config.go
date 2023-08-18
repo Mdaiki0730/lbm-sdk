@@ -9,10 +9,10 @@ import (
 	"github.com/Finschia/finschia-rdk/store/cache"
 	"github.com/Finschia/finschia-rdk/store/iavl"
 
-	storetypes "github.com/Finschia/finschia-rdk/store/types"
+	storetypes "github.com/Finschia/finschia-sdk/store/types"
 	"github.com/Finschia/finschia-rdk/telemetry"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 const (

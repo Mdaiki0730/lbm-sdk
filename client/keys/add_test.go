@@ -15,12 +15,12 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/crypto/hd"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
+	"github.com/Finschia/finschia-sdk/crypto/hd"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 func Test_runAddCmdBasic(t *testing.T) {

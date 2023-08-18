@@ -5,10 +5,10 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	vestexported "github.com/Finschia/finschia-rdk/x/auth/vesting/exported"
 	"github.com/Finschia/finschia-rdk/x/bank/types"
 )

@@ -8,10 +8,10 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/simapp/helpers"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 )
 
 func getTestingMode(tb testing.TB) (testingMode bool, t *testing.T, b *testing.B) {

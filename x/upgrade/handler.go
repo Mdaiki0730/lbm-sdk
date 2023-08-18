@@ -1,8 +1,8 @@
 package upgrade
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	govtypes "github.com/Finschia/finschia-rdk/x/gov/types"
 	"github.com/Finschia/finschia-rdk/x/upgrade/keeper"
 	"github.com/Finschia/finschia-rdk/x/upgrade/types"

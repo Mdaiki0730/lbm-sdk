@@ -3,7 +3,7 @@ package v040
 import (
 	"github.com/golang/protobuf/proto" //nolint:staticcheck
 
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/x/bank/types"
 )
 

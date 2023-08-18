@@ -14,9 +14,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/simulation"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/simulation"
 )
 
 const AverageBlockTime = 6 * time.Second

@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Finschia/finschia-rdk/crypto/keys/ed25519"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"
 )

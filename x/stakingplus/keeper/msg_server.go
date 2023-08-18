@@ -3,11 +3,11 @@ package keeper
 import (
 	"context"
 
-	"github.com/Finschia/finschia-rdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/errors"
 	stakingkeeper "github.com/Finschia/finschia-rdk/x/staking/keeper"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/stakingplus"
 )
 

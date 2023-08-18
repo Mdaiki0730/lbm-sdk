@@ -4,12 +4,12 @@ import (
 	"github.com/gogo/protobuf/proto"
 
 	"github.com/Finschia/finschia-rdk/client"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/tx"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/ante"
 	authsigning "github.com/Finschia/finschia-rdk/x/auth/signing"
 )

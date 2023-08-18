@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/Finschia/finschia-rdk/testutil"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	grpctypes "github.com/Finschia/finschia-rdk/types/grpc"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
 
 	"github.com/gogo/protobuf/proto"
 

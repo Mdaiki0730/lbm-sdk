@@ -7,9 +7,9 @@ import (
 	osttime "github.com/Finschia/ostracon/types/time"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Finschia/finschia-rdk/crypto/keys/secp256k1"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/auth/vesting/types"
 )

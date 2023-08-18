@@ -12,14 +12,14 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/crypto/hd"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
+	"github.com/Finschia/finschia-sdk/crypto/hd"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
 	"github.com/Finschia/finschia-rdk/server"
 	"github.com/Finschia/finschia-rdk/simapp"
 	simcmd "github.com/Finschia/finschia-rdk/simapp/simd/cmd"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/module"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 	genutiltest "github.com/Finschia/finschia-rdk/x/genutil/client/testutil"
 )

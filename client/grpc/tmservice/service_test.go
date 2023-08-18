@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/Finschia/finschia-rdk/client/grpc/tmservice"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 	"github.com/Finschia/finschia-rdk/testutil/network"
 	"github.com/Finschia/finschia-rdk/testutil/rest"
-	qtypes "github.com/Finschia/finschia-rdk/types/query"
+	qtypes "github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/version"
 )
 

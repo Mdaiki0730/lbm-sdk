@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/slashing/types"
 )
 

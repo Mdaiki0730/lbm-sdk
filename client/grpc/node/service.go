@@ -7,7 +7,7 @@ import (
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 
 	"github.com/Finschia/finschia-rdk/client"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // RegisterNodeService registers the node gRPC service on the provided gRPC router.

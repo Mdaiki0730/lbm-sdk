@@ -5,8 +5,8 @@ package types
 
 import (
 	fmt "fmt"
-	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-rdk/types"
-	types "github.com/Finschia/finschia-rdk/types"
+	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-sdk/types"
+	types "github.com/Finschia/finschia-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"

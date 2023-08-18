@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/x/bank/types"
 )
 

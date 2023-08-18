@@ -22,11 +22,11 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/server"
 	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-rdk/simapp"
-	"github.com/Finschia/finschia-rdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 )
 

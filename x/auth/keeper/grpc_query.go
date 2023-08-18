@@ -4,13 +4,13 @@ import (
 	"context"
 
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	"github.com/Finschia/finschia-rdk/types/query"
+	"github.com/Finschia/finschia-sdk/types/query"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 )
 

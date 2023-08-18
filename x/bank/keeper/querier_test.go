@@ -7,8 +7,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/x/bank/keeper"
 	"github.com/Finschia/finschia-rdk/x/bank/types"
 	minttypes "github.com/Finschia/finschia-rdk/x/mint/types"

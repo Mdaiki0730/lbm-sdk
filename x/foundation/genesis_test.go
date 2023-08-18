@@ -9,9 +9,9 @@ import (
 
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/foundation"
 )
 

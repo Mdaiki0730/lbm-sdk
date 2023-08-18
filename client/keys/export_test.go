@@ -9,13 +9,13 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/crypto/hd"
+	"github.com/Finschia/finschia-sdk/crypto/hd"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
 
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 func Test_runExportCmd(t *testing.T) {

@@ -10,12 +10,12 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/grpc/tmservice"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	pagination "github.com/Finschia/finschia-rdk/types/query"
-	txtypes "github.com/Finschia/finschia-rdk/types/tx"
-	tx2types "github.com/Finschia/finschia-rdk/types/tx2"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	pagination "github.com/Finschia/finschia-sdk/types/query"
+	txtypes "github.com/Finschia/finschia-sdk/types/tx"
+	tx2types "github.com/Finschia/finschia-sdk/types/tx2"
 )
 
 type tx2Server struct {

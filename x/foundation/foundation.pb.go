@@ -5,9 +5,9 @@ package foundation
 
 import (
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-rdk/types"
-	types1 "github.com/Finschia/finschia-rdk/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-sdk/types"
+	types1 "github.com/Finschia/finschia-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"

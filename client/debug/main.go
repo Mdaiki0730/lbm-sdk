@@ -9,8 +9,8 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/Finschia/finschia-rdk/client"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/version"
 )
 

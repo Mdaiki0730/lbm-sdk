@@ -6,8 +6,8 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	query "github.com/Finschia/finschia-rdk/types/query"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	query "github.com/Finschia/finschia-sdk/types/query"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"

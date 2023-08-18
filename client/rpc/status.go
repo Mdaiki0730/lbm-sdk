@@ -11,8 +11,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	cryptocodec "github.com/Finschia/finschia-rdk/crypto/codec"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	cryptocodec "github.com/Finschia/finschia-sdk/crypto/codec"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 )
 
 // ValidatorInfo is info about the node's validator, same as Ostracon,

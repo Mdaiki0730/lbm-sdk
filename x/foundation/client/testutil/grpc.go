@@ -7,7 +7,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/testutil/rest"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/foundation"
 )
 

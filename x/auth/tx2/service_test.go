@@ -10,9 +10,9 @@ import (
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/testutil/network"
 	"github.com/Finschia/finschia-rdk/testutil/rest"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
-	"github.com/Finschia/finschia-rdk/types/tx2"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
+	"github.com/Finschia/finschia-sdk/types/tx2"
 	bankcli "github.com/Finschia/finschia-rdk/x/bank/client/testutil"
 )
 

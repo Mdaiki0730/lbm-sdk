@@ -9,7 +9,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/crisis"
 	"github.com/Finschia/finschia-rdk/x/crisis/types"
 	distrtypes "github.com/Finschia/finschia-rdk/x/distribution/types"

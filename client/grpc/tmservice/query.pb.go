@@ -6,8 +6,8 @@ package tmservice
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	query "github.com/Finschia/finschia-rdk/types/query"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	query "github.com/Finschia/finschia-sdk/types/query"
 	_ "github.com/Finschia/ostracon/abci/types"
 	_ "github.com/Finschia/ostracon/proto/ostracon/types"
 	grpc1 "github.com/gogo/protobuf/grpc"

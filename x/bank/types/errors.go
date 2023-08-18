@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 // x/bank module sentinel errors

@@ -10,9 +10,9 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
 	"github.com/Finschia/finschia-rdk/server"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	authvesting "github.com/Finschia/finschia-rdk/x/auth/vesting/types"
 	banktypes "github.com/Finschia/finschia-rdk/x/bank/types"

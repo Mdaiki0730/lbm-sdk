@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/simulation"
 )

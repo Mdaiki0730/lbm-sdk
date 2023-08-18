@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/Finschia/finschia-rdk/types/module"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	"github.com/Finschia/finschia-sdk/types/module"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-rdk/x/evidence/exported"
 	"github.com/Finschia/finschia-rdk/x/evidence/types"
 )

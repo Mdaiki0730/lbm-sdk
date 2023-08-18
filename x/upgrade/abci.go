@@ -7,7 +7,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
 	"github.com/Finschia/finschia-rdk/telemetry"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/upgrade/keeper"
 	"github.com/Finschia/finschia-rdk/x/upgrade/types"
 )

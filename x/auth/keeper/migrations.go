@@ -3,7 +3,7 @@ package keeper
 import (
 	"github.com/gogo/protobuf/grpc"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v043 "github.com/Finschia/finschia-rdk/x/auth/legacy/v043"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 )

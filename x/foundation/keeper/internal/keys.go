@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"time"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // Keys for foundation store

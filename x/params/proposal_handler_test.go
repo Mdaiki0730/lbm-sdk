@@ -7,7 +7,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	govtypes "github.com/Finschia/finschia-rdk/x/gov/types"
 	"github.com/Finschia/finschia-rdk/x/params"
 	"github.com/Finschia/finschia-rdk/x/params/types/proposal"

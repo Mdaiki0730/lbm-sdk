@@ -5,9 +5,9 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	cdctypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	cdctypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
 	authzcodec "github.com/Finschia/finschia-rdk/x/authz/codec"
 )

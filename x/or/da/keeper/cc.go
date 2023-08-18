@@ -8,8 +8,8 @@ import (
 	"io"
 	"time"
 
-	sdktypes "github.com/Finschia/finschia-rdk/types"
-	sdkerror "github.com/Finschia/finschia-rdk/types/errors"
+	sdktypes "github.com/Finschia/finschia-sdk/types"
+	sdkerror "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/or/da/types"
 )
 

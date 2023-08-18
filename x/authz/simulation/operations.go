@@ -4,15 +4,15 @@ import (
 	"math/rand"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	"github.com/Finschia/finschia-rdk/codec"
-	cdctypes "github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	cdctypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/simapp/helpers"
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-rdk/x/authz"
 
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/authz/keeper"
 
 	banktype "github.com/Finschia/finschia-rdk/x/bank/types"

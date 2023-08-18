@@ -11,7 +11,7 @@ import (
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/client/tx"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/version"
 	authclient "github.com/Finschia/finschia-rdk/x/auth/client"
 	"github.com/Finschia/finschia-rdk/x/authz"

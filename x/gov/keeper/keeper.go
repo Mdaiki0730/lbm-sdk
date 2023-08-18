@@ -6,8 +6,8 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )

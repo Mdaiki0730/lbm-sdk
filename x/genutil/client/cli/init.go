@@ -21,8 +21,8 @@ import (
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/client/input"
 	"github.com/Finschia/finschia-rdk/server"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/module"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 )
 

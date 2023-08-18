@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Finschia/finschia-rdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/crypto/types"
 
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
 )

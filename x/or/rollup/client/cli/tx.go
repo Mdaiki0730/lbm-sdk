@@ -7,11 +7,11 @@ import (
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/client/tx"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/types"
 	"github.com/spf13/cobra"
 
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 )
 
 const (

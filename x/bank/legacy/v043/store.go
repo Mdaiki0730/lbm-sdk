@@ -1,9 +1,9 @@
 package v043
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v040auth "github.com/Finschia/finschia-rdk/x/auth/legacy/v040"
 	v040bank "github.com/Finschia/finschia-rdk/x/bank/legacy/v040"
 	"github.com/Finschia/finschia-rdk/x/bank/types"

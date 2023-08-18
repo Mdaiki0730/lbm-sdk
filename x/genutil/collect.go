@@ -16,8 +16,8 @@ import (
 	octypes "github.com/Finschia/ostracon/types"
 
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	bankexported "github.com/Finschia/finschia-rdk/x/bank/exported"
 	"github.com/Finschia/finschia-rdk/x/genutil/types"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"

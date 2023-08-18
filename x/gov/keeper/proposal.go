@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/Finschia/finschia-rdk/client"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

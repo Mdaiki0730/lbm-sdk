@@ -9,7 +9,7 @@ import (
 	"github.com/Finschia/finschia-rdk/store/prefix"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v040bank "github.com/Finschia/finschia-rdk/x/bank/legacy/v040"
 	v043bank "github.com/Finschia/finschia-rdk/x/bank/legacy/v043"
 	"github.com/Finschia/finschia-rdk/x/bank/types"

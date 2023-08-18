@@ -1,9 +1,9 @@
 package ante_test
 
 import (
-	"github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth/ante"
 	"github.com/Finschia/finschia-rdk/x/auth/tx"
 )

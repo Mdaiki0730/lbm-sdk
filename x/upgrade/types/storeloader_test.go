@@ -15,8 +15,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	"github.com/Finschia/finschia-rdk/store/rootmulti"
-	store "github.com/Finschia/finschia-rdk/store/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	store "github.com/Finschia/finschia-sdk/store/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 func useUpgradeLoader(height int64, upgrades *store.StoreUpgrades) func(*baseapp.BaseApp) {

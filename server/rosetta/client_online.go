@@ -21,8 +21,8 @@ import (
 
 	crgerrs "github.com/Finschia/finschia-rdk/server/rosetta/lib/errors"
 	crgtypes "github.com/Finschia/finschia-rdk/server/rosetta/lib/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	grpctypes "github.com/Finschia/finschia-rdk/types/grpc"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
 	"github.com/Finschia/finschia-rdk/version"
 	authtx "github.com/Finschia/finschia-rdk/x/auth/tx"
 	auth "github.com/Finschia/finschia-rdk/x/auth/types"

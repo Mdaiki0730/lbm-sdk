@@ -1,8 +1,8 @@
 package stakingplus
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec/types"
 	authzcodec "github.com/Finschia/finschia-rdk/x/authz/codec"
 	"github.com/Finschia/finschia-rdk/x/foundation"
 	fdncodec "github.com/Finschia/finschia-rdk/x/foundation/codec"

@@ -4,9 +4,9 @@ import (
 	"math/rand"
 
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/module"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	dasimulation "github.com/Finschia/finschia-rdk/x/or/da/simulation"
 	datest "github.com/Finschia/finschia-rdk/x/or/da/testutil"
 	"github.com/Finschia/finschia-rdk/x/or/da/types"

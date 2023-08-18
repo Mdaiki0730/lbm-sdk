@@ -9,7 +9,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp"
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"

@@ -5,8 +5,8 @@ package v040
 import (
 	"encoding/binary"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/kv"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/kv"
 	v040auth "github.com/Finschia/finschia-rdk/x/auth/legacy/v040"
 )
 

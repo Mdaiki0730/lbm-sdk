@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/Finschia/finschia-rdk/telemetry"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/mint/keeper"
 	"github.com/Finschia/finschia-rdk/x/mint/types"
 )

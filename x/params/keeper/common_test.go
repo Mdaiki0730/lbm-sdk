@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	paramskeeper "github.com/Finschia/finschia-rdk/x/params/keeper"
 )
 

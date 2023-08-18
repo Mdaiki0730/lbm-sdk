@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/Finschia/finschia-rdk/crypto/keys/ed25519"
+	"github.com/Finschia/finschia-sdk/crypto/keys/ed25519"
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/evidence"
 	"github.com/Finschia/finschia-rdk/x/evidence/exported"
 	"github.com/Finschia/finschia-rdk/x/evidence/keeper"

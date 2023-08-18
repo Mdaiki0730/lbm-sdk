@@ -7,7 +7,7 @@ import (
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/testutil"
 	clitestutil "github.com/Finschia/finschia-rdk/testutil/cli"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	stakingcli "github.com/Finschia/finschia-rdk/x/staking/client/cli"
 )
 

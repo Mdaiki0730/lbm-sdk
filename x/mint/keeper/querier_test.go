@@ -3,11 +3,11 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 
 	"github.com/stretchr/testify/require"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	keep "github.com/Finschia/finschia-rdk/x/mint/keeper"
 	"github.com/Finschia/finschia-rdk/x/mint/types"
 

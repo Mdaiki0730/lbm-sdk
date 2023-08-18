@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	bankkeeper "github.com/Finschia/finschia-rdk/x/bank/keeper"
 	minttypes "github.com/Finschia/finschia-rdk/x/mint/types"
 )

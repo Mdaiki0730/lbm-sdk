@@ -3,10 +3,10 @@ package tx
 import (
 	"fmt"
 
-	signingtypes "github.com/Finschia/finschia-rdk/types/tx/signing"
+	signingtypes "github.com/Finschia/finschia-sdk/types/tx/signing"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	types "github.com/Finschia/finschia-rdk/types/tx"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	types "github.com/Finschia/finschia-sdk/types/tx"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

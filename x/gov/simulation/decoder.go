@@ -5,8 +5,8 @@ import (
 	"encoding/binary"
 	"fmt"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/types/kv"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/types/kv"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

@@ -5,8 +5,8 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	auth "github.com/Finschia/finschia-rdk/x/auth/types"
 	bankexported "github.com/Finschia/finschia-rdk/x/bank/exported"
 )

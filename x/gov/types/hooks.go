@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 var _ GovHooks = MultiGovHooks{}

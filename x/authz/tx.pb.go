@@ -6,8 +6,8 @@ package authz
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	_ "github.com/Finschia/finschia-rdk/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	_ "github.com/Finschia/finschia-sdk/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"

@@ -7,7 +7,7 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	servertypes "github.com/Finschia/finschia-rdk/server/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	slashingtypes "github.com/Finschia/finschia-rdk/x/slashing/types"
 	"github.com/Finschia/finschia-rdk/x/staking"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"

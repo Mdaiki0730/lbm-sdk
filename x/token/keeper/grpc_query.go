@@ -7,9 +7,9 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/x/token"
 )
 

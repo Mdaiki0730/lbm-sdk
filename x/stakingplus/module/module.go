@@ -5,11 +5,11 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/types/module"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/types/module"
 
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
 	"github.com/Finschia/finschia-rdk/x/stakingplus"
 	"github.com/Finschia/finschia-rdk/x/stakingplus/keeper"

@@ -1,7 +1,7 @@
 package v043
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v043distribution "github.com/Finschia/finschia-rdk/x/distribution/legacy/v043"
 	v040slashing "github.com/Finschia/finschia-rdk/x/slashing/legacy/v040"
 )

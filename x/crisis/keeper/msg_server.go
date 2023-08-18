@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/crisis/types"
 )
 

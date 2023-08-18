@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/Finschia/finschia-rdk/client/keys"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
 )
 
 type testCases struct {

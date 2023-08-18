@@ -9,7 +9,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/types/module"
+	"github.com/Finschia/finschia-sdk/types/module"
 )
 
 const chainUpgradeGuide = "https://docs.cosmos.network/master/migrations/chain-upgrade-guide-040.html"

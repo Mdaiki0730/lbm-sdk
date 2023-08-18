@@ -8,7 +8,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v040slashing "github.com/Finschia/finschia-rdk/x/slashing/legacy/v040"
 	v043slashing "github.com/Finschia/finschia-rdk/x/slashing/legacy/v043"
 	"github.com/Finschia/finschia-rdk/x/slashing/types"

@@ -3,9 +3,9 @@ package tx
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	signingtypes "github.com/Finschia/finschia-rdk/types/tx/signing"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	signingtypes "github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )

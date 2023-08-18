@@ -3,7 +3,7 @@ package simapp
 import (
 	"errors"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 )
 

@@ -3,8 +3,8 @@ package rollup
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/keeper"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/types"
 )

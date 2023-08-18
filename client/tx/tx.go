@@ -12,11 +12,11 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/input"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/tx"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authsigning "github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

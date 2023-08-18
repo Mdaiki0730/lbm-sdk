@@ -5,7 +5,7 @@ package types
 
 import (
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"
 	math "math"

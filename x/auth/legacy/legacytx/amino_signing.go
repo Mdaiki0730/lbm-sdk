@@ -3,11 +3,11 @@ package legacytx
 import (
 	"fmt"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/crypto/types/multisig"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	signingtypes "github.com/Finschia/finschia-rdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/crypto/types/multisig"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	signingtypes "github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

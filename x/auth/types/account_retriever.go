@@ -9,8 +9,8 @@ import (
 	"google.golang.org/grpc/metadata"
 
 	"github.com/Finschia/finschia-rdk/client"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	grpctypes "github.com/Finschia/finschia-rdk/types/grpc"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
 )
 
 var (

@@ -10,7 +10,7 @@ import (
 	"github.com/Finschia/finschia-rdk/client"
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
 	"github.com/Finschia/finschia-rdk/testutil"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 )
 

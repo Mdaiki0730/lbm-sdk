@@ -11,8 +11,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp"
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-rdk/x/feegrant"
 	"github.com/Finschia/finschia-rdk/x/feegrant/simulation"
 )

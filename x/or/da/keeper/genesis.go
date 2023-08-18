@@ -3,7 +3,7 @@ package keeper
 import (
 	"encoding/binary"
 
-	sdktypes "github.com/Finschia/finschia-rdk/types"
+	sdktypes "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/or/da/types"
 )
 

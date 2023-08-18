@@ -5,7 +5,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/input"
-	"github.com/Finschia/finschia-rdk/crypto/keyring"
+	"github.com/Finschia/finschia-sdk/crypto/keyring"
 
 	"github.com/spf13/cobra"
 )

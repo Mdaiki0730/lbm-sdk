@@ -23,7 +23,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/client/flags"
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/compat"
 	"github.com/Finschia/finschia-rdk/server/api"
 	"github.com/Finschia/finschia-rdk/server/config"
@@ -33,7 +33,7 @@ import (
 	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-rdk/store/cache"
 	"github.com/Finschia/finschia-rdk/store/iavl"
-	storetypes "github.com/Finschia/finschia-rdk/store/types"
+	storetypes "github.com/Finschia/finschia-sdk/store/types"
 	"github.com/Finschia/finschia-rdk/telemetry"
 	ostcmd "github.com/Finschia/ostracon/cmd/ostracon/commands"
 	ostos "github.com/Finschia/ostracon/libs/os"

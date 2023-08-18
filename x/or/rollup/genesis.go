@@ -1,7 +1,7 @@
 package rollup
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/keeper"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/types"
 )

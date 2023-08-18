@@ -2,7 +2,7 @@ package simulation
 
 import (
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	"github.com/Finschia/finschia-rdk/x/simulation"
 )
 

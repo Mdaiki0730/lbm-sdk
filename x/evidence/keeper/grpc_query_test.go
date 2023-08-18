@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/x/evidence/exported"
 	"github.com/Finschia/finschia-rdk/x/evidence/types"
 

@@ -6,8 +6,8 @@ package token
 import (
 	context "context"
 	fmt "fmt"
-	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-rdk/types"
-	query "github.com/Finschia/finschia-rdk/types/query"
+	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-sdk/types"
+	query "github.com/Finschia/finschia-sdk/types/query"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"

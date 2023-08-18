@@ -7,7 +7,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client/flags"
 	"github.com/Finschia/finschia-rdk/testutil/rest"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/authz"
 	"github.com/Finschia/finschia-rdk/x/authz/client/cli"
 	banktypes "github.com/Finschia/finschia-rdk/x/bank/types"

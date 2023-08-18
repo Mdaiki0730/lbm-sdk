@@ -2,8 +2,8 @@ package types
 
 import (
 	"github.com/Finschia/finschia-rdk/baseapp"
-	store "github.com/Finschia/finschia-rdk/store/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	store "github.com/Finschia/finschia-sdk/store/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // UpgradeStoreLoader is used to prepare baseapp with a fixed StoreLoader

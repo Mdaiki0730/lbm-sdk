@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	stakingtypes "github.com/Finschia/finschia-rdk/x/staking/types"
 )
 

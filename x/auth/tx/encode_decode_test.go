@@ -9,12 +9,12 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/encoding/protowire"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/tx"
-	signingtypes "github.com/Finschia/finschia-rdk/types/tx/signing"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx"
+	signingtypes "github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

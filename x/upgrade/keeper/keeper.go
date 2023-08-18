@@ -12,12 +12,12 @@ import (
 	"github.com/Finschia/ostracon/libs/log"
 	ostos "github.com/Finschia/ostracon/libs/os"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	store "github.com/Finschia/finschia-rdk/store/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/module"
+	store "github.com/Finschia/finschia-sdk/store/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/module"
 	xp "github.com/Finschia/finschia-rdk/x/upgrade/exported"
 	"github.com/Finschia/finschia-rdk/x/upgrade/types"
 )

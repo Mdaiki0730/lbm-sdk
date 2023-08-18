@@ -5,7 +5,7 @@ package testdata
 
 import (
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	io "io"

@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // NewGenesisState creates a new GenesisState object

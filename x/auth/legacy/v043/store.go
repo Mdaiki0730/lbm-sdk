@@ -28,8 +28,8 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/auth/vesting/exported"
 	vestingtypes "github.com/Finschia/finschia-rdk/x/auth/vesting/types"

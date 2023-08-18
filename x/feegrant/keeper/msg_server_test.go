@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/x/feegrant"
 )
 

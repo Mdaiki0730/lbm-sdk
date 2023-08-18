@@ -6,9 +6,9 @@ package collection
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
-	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-rdk/types"
-	query "github.com/Finschia/finschia-rdk/types/query"
+	types "github.com/Finschia/finschia-sdk/codec/types"
+	github_com_Finschia_finschia_rdk_types "github.com/Finschia/finschia-sdk/types"
+	query "github.com/Finschia/finschia-sdk/types/query"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"

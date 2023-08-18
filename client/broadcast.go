@@ -9,9 +9,9 @@ import (
 	"google.golang.org/grpc/status"
 
 	"github.com/Finschia/finschia-rdk/client/flags"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
-	"github.com/Finschia/finschia-rdk/types/tx"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx"
 	"github.com/Finschia/ostracon/mempool"
 	octypes "github.com/Finschia/ostracon/types"
 )

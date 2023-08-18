@@ -8,8 +8,8 @@ import (
 
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/rest"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	grpctypes "github.com/Finschia/finschia-rdk/types/grpc"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
 	"github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

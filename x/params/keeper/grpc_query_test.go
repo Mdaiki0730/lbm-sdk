@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/params/types"
 	"github.com/Finschia/finschia-rdk/x/params/types/proposal"
 )

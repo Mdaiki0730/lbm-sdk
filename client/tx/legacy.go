@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )

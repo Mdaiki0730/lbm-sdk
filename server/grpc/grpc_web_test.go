@@ -22,8 +22,8 @@ import (
 	"google.golang.org/grpc/codes"
 
 	"github.com/Finschia/finschia-rdk/client/grpc/tmservice"
-	"github.com/Finschia/finschia-rdk/codec"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 	"github.com/Finschia/finschia-rdk/testutil/network"
 	banktypes "github.com/Finschia/finschia-rdk/x/bank/types"
 )

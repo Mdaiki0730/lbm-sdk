@@ -6,7 +6,7 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/crisis/types"
 	paramtypes "github.com/Finschia/finschia-rdk/x/params/types"
 )

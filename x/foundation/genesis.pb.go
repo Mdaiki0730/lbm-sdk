@@ -5,7 +5,7 @@ package foundation
 
 import (
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 	_ "github.com/regen-network/cosmos-proto"

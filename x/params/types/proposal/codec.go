@@ -1,8 +1,8 @@
 package proposal
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec/types"
 	govtypes "github.com/Finschia/finschia-rdk/x/gov/types"
 )
 

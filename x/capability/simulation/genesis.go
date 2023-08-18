@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/Finschia/finschia-rdk/types/module"
+	"github.com/Finschia/finschia-sdk/types/module"
 	"github.com/Finschia/finschia-rdk/x/capability/types"
 )
 

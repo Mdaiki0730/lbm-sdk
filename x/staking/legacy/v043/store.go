@@ -2,8 +2,8 @@ package v043
 
 import (
 	"github.com/Finschia/finschia-rdk/store/prefix"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/address"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/address"
 	v040auth "github.com/Finschia/finschia-rdk/x/auth/legacy/v040"
 	v043distribution "github.com/Finschia/finschia-rdk/x/distribution/legacy/v043"
 	v040staking "github.com/Finschia/finschia-rdk/x/staking/legacy/v040"

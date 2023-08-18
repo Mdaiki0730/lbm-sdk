@@ -8,7 +8,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp/params"
 
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	bankkeeper "github.com/Finschia/finschia-rdk/x/bank/keeper"
 	stakingkeeper "github.com/Finschia/finschia-rdk/x/staking/keeper"
 )

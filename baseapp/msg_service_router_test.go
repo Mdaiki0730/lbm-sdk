@@ -15,7 +15,7 @@ import (
 	"github.com/Finschia/finschia-rdk/client/tx"
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authsigning "github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

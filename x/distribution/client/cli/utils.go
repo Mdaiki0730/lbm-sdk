@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-rdk/internal/os"
 	"github.com/Finschia/finschia-rdk/x/distribution/types"
 )

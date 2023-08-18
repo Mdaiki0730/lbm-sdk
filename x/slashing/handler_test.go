@@ -11,7 +11,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/slashing"
 	"github.com/Finschia/finschia-rdk/x/slashing/keeper"
 	"github.com/Finschia/finschia-rdk/x/slashing/testslashing"

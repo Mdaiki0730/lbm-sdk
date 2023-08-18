@@ -4,7 +4,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
 	"github.com/Finschia/finschia-rdk/client"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/genutil/types"
 )
 

@@ -11,7 +11,7 @@ import (
 	"github.com/Finschia/finschia-rdk/server/grpc/gogoreflection"
 	reflection "github.com/Finschia/finschia-rdk/server/grpc/reflection/v2"
 	"github.com/Finschia/finschia-rdk/server/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // StartGRPCServer starts a gRPC server on the given address.

@@ -8,7 +8,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	v040distribution "github.com/Finschia/finschia-rdk/x/distribution/legacy/v040"
 	v043distribution "github.com/Finschia/finschia-rdk/x/distribution/legacy/v043"
 	"github.com/Finschia/finschia-rdk/x/distribution/types"

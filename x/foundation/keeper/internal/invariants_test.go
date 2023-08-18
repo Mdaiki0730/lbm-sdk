@@ -1,7 +1,7 @@
 package internal_test
 
 import (
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/foundation"
 	"github.com/Finschia/finschia-rdk/x/foundation/keeper/internal"
 )

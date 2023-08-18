@@ -10,8 +10,8 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/upgrade/types"
 )
 

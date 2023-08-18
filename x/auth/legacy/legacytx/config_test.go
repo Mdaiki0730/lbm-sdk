@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	cryptoAmino "github.com/Finschia/finschia-rdk/crypto/codec"
+	"github.com/Finschia/finschia-sdk/codec"
+	cryptoAmino "github.com/Finschia/finschia-sdk/crypto/codec"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
 	"github.com/Finschia/finschia-rdk/x/auth/testutil"
 )

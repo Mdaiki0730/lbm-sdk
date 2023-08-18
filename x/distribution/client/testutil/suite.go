@@ -15,7 +15,7 @@ import (
 	"github.com/Finschia/finschia-rdk/testutil"
 	clitestutil "github.com/Finschia/finschia-rdk/testutil/cli"
 	"github.com/Finschia/finschia-rdk/testutil/network"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/distribution/client/cli"
 	minttypes "github.com/Finschia/finschia-rdk/x/mint/types"
 )

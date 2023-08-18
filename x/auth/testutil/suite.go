@@ -6,12 +6,12 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/Finschia/finschia-rdk/client"
-	kmultisig "github.com/Finschia/finschia-rdk/crypto/keys/multisig"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	"github.com/Finschia/finschia-rdk/crypto/types/multisig"
+	kmultisig "github.com/Finschia/finschia-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/crypto/types/multisig"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	signingtypes "github.com/Finschia/finschia-rdk/types/tx/signing"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	signingtypes "github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

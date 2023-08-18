@@ -13,7 +13,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/client"
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/auth/legacy/legacytx"
 	"github.com/Finschia/finschia-rdk/x/gov/client/utils"
 	"github.com/Finschia/finschia-rdk/x/gov/types"

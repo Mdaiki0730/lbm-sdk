@@ -7,10 +7,10 @@ import (
 	oststrings "github.com/Finschia/ostracon/libs/strings"
 	metrics "github.com/armon/go-metrics"
 
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 	"github.com/Finschia/finschia-rdk/telemetry"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	sdkerrors "github.com/Finschia/finschia-rdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/Finschia/finschia-rdk/x/staking/types"
 )
 

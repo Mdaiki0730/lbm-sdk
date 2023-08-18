@@ -3,8 +3,8 @@ package bankplus
 import (
 	"fmt"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/types/module"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/types/module"
 	accountkeeper "github.com/Finschia/finschia-rdk/x/auth/keeper"
 	"github.com/Finschia/finschia-rdk/x/bank"
 	bankkeeper "github.com/Finschia/finschia-rdk/x/bank/keeper"

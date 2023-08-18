@@ -4,8 +4,8 @@
 package params
 
 import (
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/Finschia/finschia-rdk/x/auth/tx"
 )
 

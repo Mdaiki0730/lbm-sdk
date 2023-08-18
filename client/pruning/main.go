@@ -15,8 +15,8 @@ import (
 	"github.com/Finschia/finschia-rdk/server"
 	servertypes "github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-rdk/store/rootmulti"
-	storetypes "github.com/Finschia/finschia-rdk/store/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	storetypes "github.com/Finschia/finschia-sdk/store/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 const FlagAppDBBackend = "app-db-backend"

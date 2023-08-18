@@ -7,10 +7,10 @@ import (
 	"github.com/gogo/protobuf/proto"
 
 	"github.com/Finschia/finschia-rdk/client/flags"
-	codectypes "github.com/Finschia/finschia-rdk/codec/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	clitestutil "github.com/Finschia/finschia-rdk/testutil/cli"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/query"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"github.com/Finschia/finschia-rdk/x/collection"
 	"github.com/Finschia/finschia-rdk/x/collection/client/cli"
 )

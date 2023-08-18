@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/Finschia/finschia-rdk/client"
-	cryptotypes "github.com/Finschia/finschia-rdk/crypto/types"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/simulation"
-	"github.com/Finschia/finschia-rdk/types/tx/signing"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/simulation"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authsign "github.com/Finschia/finschia-rdk/x/auth/signing"
 )
 

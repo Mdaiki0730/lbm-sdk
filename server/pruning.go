@@ -8,7 +8,7 @@ import (
 
 	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-rdk/store"
-	storetypes "github.com/Finschia/finschia-rdk/store/types"
+	storetypes "github.com/Finschia/finschia-sdk/store/types"
 )
 
 // GetPruningOptionsFromFlags parses command flags and returns the correct

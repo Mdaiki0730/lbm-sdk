@@ -3,8 +3,8 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/Finschia/finschia-rdk/codec"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-rdk/x/auth/types"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/types"
 	paramtypes "github.com/Finschia/finschia-rdk/x/params/types"

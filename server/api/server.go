@@ -17,10 +17,10 @@ import (
 	ostrpcserver "github.com/Finschia/ostracon/rpc/jsonrpc/server"
 
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec/legacy"
+	"github.com/Finschia/finschia-sdk/codec/legacy"
 	"github.com/Finschia/finschia-rdk/server/config"
 	"github.com/Finschia/finschia-rdk/telemetry"
-	grpctypes "github.com/Finschia/finschia-rdk/types/grpc"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
 
 	// unnamed import of statik for swagger UI support
 	_ "github.com/Finschia/finschia-rdk/client/docs/statik"

@@ -5,9 +5,9 @@ import (
 
 	"github.com/Finschia/finschia-rdk/baseapp"
 	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
-	sdk "github.com/Finschia/finschia-rdk/types"
-	"github.com/Finschia/finschia-rdk/types/module"
-	simtypes "github.com/Finschia/finschia-rdk/types/simulation"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 	rollupsimulation "github.com/Finschia/finschia-rdk/x/or/rollup/simulation"
 	rolluptest "github.com/Finschia/finschia-rdk/x/or/rollup/testutil"
 	"github.com/Finschia/finschia-rdk/x/or/rollup/types"

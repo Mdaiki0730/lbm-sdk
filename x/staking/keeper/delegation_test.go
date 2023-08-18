@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"github.com/Finschia/finschia-rdk/simapp"
-	sdk "github.com/Finschia/finschia-rdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-rdk/x/staking/keeper"
 	"github.com/Finschia/finschia-rdk/x/staking/teststaking"
 	"github.com/Finschia/finschia-rdk/x/staking/types"

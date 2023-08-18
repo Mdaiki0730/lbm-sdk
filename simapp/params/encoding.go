@@ -2,8 +2,8 @@ package params
 
 import (
 	"github.com/Finschia/finschia-rdk/client"
-	"github.com/Finschia/finschia-rdk/codec"
-	"github.com/Finschia/finschia-rdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec/types"
 )
 
 // EncodingConfig specifies the concrete encoding types to use for a given app.

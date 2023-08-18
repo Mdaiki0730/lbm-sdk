@@ -6,7 +6,7 @@ package testdata
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/Finschia/finschia-rdk/codec/types"
+	types "github.com/Finschia/finschia-sdk/codec/types"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
 	grpc "google.golang.org/grpc"
