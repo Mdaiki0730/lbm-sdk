@@ -3,8 +3,8 @@ package simapp
 import (
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-sdk/codec"
-	"github.com/Finschia/finschia-sdk/server/types"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-sdk/types/module"
 )

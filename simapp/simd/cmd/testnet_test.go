@@ -10,10 +10,10 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
+	"github.com/Finschia/finschia-rdk/server"
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/client/flags"
-	"github.com/Finschia/finschia-sdk/server"
 	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
 	genutiltest "github.com/Finschia/finschia-sdk/x/genutil/client/testutil"
 	genutiltypes "github.com/Finschia/finschia-sdk/x/genutil/types"

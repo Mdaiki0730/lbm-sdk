@@ -9,9 +9,9 @@ import (
 	"github.com/Finschia/finschia-rdk/compat"
 	"github.com/tendermint/tendermint/privval"
 
-	"github.com/Finschia/finschia-sdk/server/api"
-	servergrpc "github.com/Finschia/finschia-sdk/server/grpc"
-	srvtypes "github.com/Finschia/finschia-sdk/server/types"
+	"github.com/Finschia/finschia-rdk/server/api"
+	servergrpc "github.com/Finschia/finschia-rdk/server/grpc"
+	srvtypes "github.com/Finschia/finschia-rdk/server/types"
 	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
 	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
 	"github.com/Finschia/finschia-sdk/x/genutil"

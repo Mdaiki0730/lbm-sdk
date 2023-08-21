@@ -10,6 +10,7 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
+	"github.com/Finschia/finschia-rdk/server"
 	"github.com/Finschia/finschia-rdk/simapp"
 	simcmd "github.com/Finschia/finschia-rdk/simapp/simd/cmd"
 	"github.com/Finschia/finschia-rdk/testutil/testdata"
@@ -17,7 +18,6 @@ import (
 	"github.com/Finschia/finschia-sdk/client/flags"
 	"github.com/Finschia/finschia-sdk/crypto/hd"
 	"github.com/Finschia/finschia-sdk/crypto/keyring"
-	"github.com/Finschia/finschia-sdk/server"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-sdk/types/module"
 	"github.com/Finschia/finschia-sdk/x/genutil"

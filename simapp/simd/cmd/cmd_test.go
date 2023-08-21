@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
+	svrcmd "github.com/Finschia/finschia-rdk/server/cmd"
 	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/simapp/simd/cmd"
-	svrcmd "github.com/Finschia/finschia-sdk/server/cmd"
 	"github.com/Finschia/finschia-sdk/x/genutil/client/cli"
 )
 
