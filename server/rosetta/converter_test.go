@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/Finschia/finschia-rdk/testutil/testdata"
+	"github.com/Finschia/finschia-sdk/testutil/testdata"
 	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	authtx "github.com/Finschia/finschia-sdk/x/auth/tx"
 
