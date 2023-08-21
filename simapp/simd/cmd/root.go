@@ -26,7 +26,8 @@ import (
 	"github.com/Finschia/finschia-sdk/client/debug"
 	"github.com/Finschia/finschia-sdk/client/flags"
 	"github.com/Finschia/finschia-sdk/client/keys"
-	"github.com/Finschia/finschia-sdk/client/pruning"
+
+	// "github.com/Finschia/finschia-sdk/client/pruning"
 	"github.com/Finschia/finschia-sdk/client/rpc"
 	"github.com/Finschia/finschia-sdk/snapshots"
 	sdk "github.com/Finschia/finschia-sdk/types"
@@ -136,7 +137,7 @@ func initRootCmd(rootCmd *cobra.Command, encodingConfig params.EncodingConfig) {
 		testnetCmd(simapp.ModuleBasics, banktypes.GenesisBalancesIterator{}),
 		debug.Cmd(),
 		config.Cmd(),
-		pruning.PruningCmd(a.newApp),
+		// pruning.PruningCmd(a.newApp),
 	)
 
 	server.AddCommands(rootCmd, simapp.DefaultNodeHome, a.newApp, a.appExport, addModuleInitFlags)
