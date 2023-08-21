@@ -51,10 +51,6 @@ github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym
 github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d h1:nalkkPQcITbvhmL4+C4cKA87NW0tfm3Kl9VXRoPywFg=
 github.com/ChainSafe/go-schnorrkel v0.0.0-20200405005733-88cbf1b4c40d/go.mod h1:URdX5+vg25ts3aCh8H5IFZybJYKWhJHYMTnf+ULtoC4=
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
-github.com/Finschia/finschia-sdk v0.47.0-rc7.0.20230815053600-d9f4ad235766 h1:rt8FCPMzN+WdOUip7tHkMaeNKQI/jyzjxeALgSDyKtQ=
-github.com/Finschia/finschia-sdk v0.47.0-rc7.0.20230815053600-d9f4ad235766/go.mod h1:jVu28mMUcD5Awjo2b4gV7xtxxLhQ/0UshpLlZ2+mIKA=
-github.com/Finschia/ostracon v1.1.2-0.20230810030810-5836604d7dd0 h1:Egfr/T7uj5ZzxpvNFIWqb254e4PVBgdtAgB4L4OKuhQ=
-github.com/Finschia/ostracon v1.1.2-0.20230810030810-5836604d7dd0/go.mod h1:jzv79jl0uNMxg8Lvi00zzS8uMgY4sFmHkZwl8n9S2Ns=
 github.com/Finschia/r2ishiguro_vrf v0.1.2 h1:lDBz6NQMx1pw5I3End6xFmXpM//7KcmTr3Ka983e7v8=
 github.com/Finschia/r2ishiguro_vrf v0.1.2/go.mod h1:OHRtvzcJnfIrcJ0bvPNktJozRFAyZFuv56E9R3/qB+Y=
 github.com/Finschia/ramus v0.7.5-0.20230818061821-3c875df96e51 h1:hOLH3hmcqe/5Ed5Y2/wKIjCObvgQmqqZXqI32Vf+hHE=
@@ -1171,6 +1167,10 @@ github.com/ugorji/go v1.1.7/go.mod h1:kZn38zHttfInRq0xu/PH0az30d+z6vm202qpg1oXVM
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/ugorji/go/codec v1.1.7 h1:2SvQaVZ1ouYrrKKwoSk2pzd4A9evlKJb9oTL+OaLUSs=
 github.com/ugorji/go/codec v1.1.7/go.mod h1:Ax+UKWsSmolVDwsd+7N3ZtXu+yMGCf907BLYF3GoBXY=
+github.com/ulbqb/lbm-sdk v0.46.0-rc3.0.20230818180934-d41859a00ee5 h1:gftL8Yfq9trTTprN9r8rXF+FbRXgfMz3HT4EndxFxPg=
+github.com/ulbqb/lbm-sdk v0.46.0-rc3.0.20230818180934-d41859a00ee5/go.mod h1:bH3Cs+CK4QL8ERFtbuLfVxx1sVh5cZIXO9XiiiVXkOs=
+github.com/ulbqb/ostracon v1.0.6-0.20230818180353-9468a158a23f h1:NmqY7Bk2eL9lyrXIDfKqObVBh++H1CYf0ppEMqU+7M4=
+github.com/ulbqb/ostracon v1.0.6-0.20230818180353-9468a158a23f/go.mod h1:jzv79jl0uNMxg8Lvi00zzS8uMgY4sFmHkZwl8n9S2Ns=
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
 github.com/urfave/cli v1.22.1/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=
 github.com/urfave/cli v1.22.2/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=

@@ -232,6 +232,8 @@ require (
 
 replace (
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.1.7-0.20210622111912-ef00f8ac3d76
+	github.com/Finschia/finschia-sdk => github.com/ulbqb/lbm-sdk v0.46.0-rc3.0.20230818180934-d41859a00ee5
+	github.com/Finschia/ostracon => github.com/ulbqb/ostracon v1.0.6-0.20230818180353-9468a158a23f
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 	github.com/jhump/protoreflect => github.com/jhump/protoreflect v1.10.3
 	go.opentelemetry.io/otel => go.opentelemetry.io/otel v1.14.0
