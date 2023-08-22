@@ -6,8 +6,8 @@ import (
 
 	"github.com/spf13/cast"
 
-	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-rdk/store"
+	"github.com/Finschia/finschia-sdk/server/types"
 	storetypes "github.com/Finschia/finschia-sdk/store/types"
 )
 

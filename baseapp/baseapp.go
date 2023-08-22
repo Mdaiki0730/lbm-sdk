@@ -16,11 +16,11 @@ import (
 	"github.com/Finschia/ostracon/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/Finschia/finschia-rdk/server/config"
 	"github.com/Finschia/finschia-rdk/store"
 	"github.com/Finschia/finschia-rdk/store/rootmulti"
 	sdkbaseapp "github.com/Finschia/finschia-sdk/baseapp"
 	"github.com/Finschia/finschia-sdk/codec/types"
+	"github.com/Finschia/finschia-sdk/server/config"
 	"github.com/Finschia/finschia-sdk/snapshots"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"

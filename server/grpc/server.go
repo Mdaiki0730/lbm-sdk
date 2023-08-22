@@ -8,9 +8,9 @@ import (
 	"google.golang.org/grpc"
 
 	"github.com/Finschia/finschia-rdk/server/grpc/gogoreflection"
-	"github.com/Finschia/finschia-rdk/server/types"
 	"github.com/Finschia/finschia-sdk/client"
 	reflection "github.com/Finschia/finschia-sdk/server/grpc/reflection/v2"
+	"github.com/Finschia/finschia-sdk/server/types"
 	sdk "github.com/Finschia/finschia-sdk/types"
 )
 

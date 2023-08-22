@@ -19,7 +19,6 @@ import (
 	osttime "github.com/Finschia/ostracon/types/time"
 
 	"github.com/Finschia/finschia-rdk/server"
-	srvconfig "github.com/Finschia/finschia-rdk/server/config"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/client/flags"
@@ -27,6 +26,7 @@ import (
 	"github.com/Finschia/finschia-sdk/crypto/hd"
 	"github.com/Finschia/finschia-sdk/crypto/keyring"
 	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	srvconfig "github.com/Finschia/finschia-sdk/server/config"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-sdk/types/module"
 	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
