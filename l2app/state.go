@@ -1,4 +1,4 @@
-package simapp
+package l2app
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ import (
 	ostjson "github.com/Finschia/ostracon/libs/json"
 	octypes "github.com/Finschia/ostracon/types"
 
-	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
+	simappparams "github.com/Finschia/finschia-rdk/l2app/params"
 	"github.com/Finschia/finschia-sdk/codec"
 	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
 	sdk "github.com/Finschia/finschia-sdk/types"
@@ -40,7 +40,7 @@ func AppStateFn(cdc codec.JSONCodec, simManager *module.SimulationManager) simty
 			panic("cannot provide both a genesis file and a params file")
 
 		case config.GenesisFile != "":
-			// override the default chain-id from simapp to set it later to the config
+			// override the default chain-id from l2app to set it later to the config
 			genesisDoc, accounts := AppStateFromGenesisFileFn(r, cdc, config.GenesisFile)
 
 			if FlagGenesisTimeValue == 0 {

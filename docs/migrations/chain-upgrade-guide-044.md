@@ -4,7 +4,7 @@ order: 1
 
 # Chain Upgrade Guide to v0.44
 
-This document provides guidelines for a chain upgrade from v0.42 to v0.44 and an example of the upgrade process using `simapp`. {synopsis}
+This document provides guidelines for a chain upgrade from v0.42 to v0.44 and an example of the upgrade process using `l2app`. {synopsis}
 
 ::: tip
 You must upgrade to Stargate v0.42 before upgrading to v0.44. If you have not done so, please see [Chain Upgrade Guide to v0.42](/v0.42/migrations/chain-upgrade-guide-040.html). Please note, v0.43 was discontinued shortly after being released and all chains should upgrade directly to v0.44 from v0.42.
@@ -42,7 +42,7 @@ With the update to `v0.44`, new server configuration options have been added to 
 
 ## Example: Simapp Upgrade
 
-The following example will walk through the upgrade process using `simapp` as our blockchain application. We will be upgrading `simapp` from v0.42 to v0.44. We will be building the upgrade binary ourselves and enabling the auto-restart option.
+The following example will walk through the upgrade process using `l2app` as our blockchain application. We will be upgrading `l2app` from v0.42 to v0.44. We will be building the upgrade binary ourselves and enabling the auto-restart option.
 
 *Note: In this example, we will be starting a new chain from `v0.42`. The binary for this version will be the genesis binary. For validators using Cosmovisor for the first time, the binary for the current version of the chain should be used as the genesis binary (i.e. the starting binary). For more information, see [Cosmovisor](../run-node/cosmovisor.html).*
 
@@ -54,24 +54,24 @@ From within the `cosmos-sdk` repository, check out the latest `v0.42.x` release:
 git checkout release/v0.42.x
 ```
 
-Build the `simd` binary for the latest `v0.42.x` release (the genesis binary):
+Build the `rollupd` binary for the latest `v0.42.x` release (the genesis binary):
 
 ```
 make build
 ```
 
-Reset `~/.simapp` (never do this in a production environment):
+Reset `~/.l2app` (never do this in a production environment):
 
 ```
-./build/simd unsafe-reset-all
+./build/rollupd unsafe-reset-all
 ```
 
-Configure the `simd` binary for testing:
+Configure the `rollupd` binary for testing:
 
 ```
-./build/simd config chain-id test
-./build/simd config keyring-backend test
-./build/simd config broadcast-mode block
+./build/rollupd config chain-id test
+./build/rollupd config keyring-backend test
+./build/rollupd config broadcast-mode block
 ```
 
 Initialize the node and overwrite any previous genesis file (never do this in a production environment):
@@ -79,10 +79,10 @@ Initialize the node and overwrite any previous genesis file (never do this in a 
 <!-- TODO: init does not read chain-id from config -->
 
 ```
-./build/simd init test --chain-id test --overwrite
+./build/rollupd init test --chain-id test --overwrite
 ```
 
-Set the minimum gas price to `0stake` in `~/.simapp/config/app.toml`:
+Set the minimum gas price to `0stake` in `~/.l2app/config/app.toml`:
 
 ```
 minimum-gas-prices = "0stake"
@@ -91,7 +91,7 @@ minimum-gas-prices = "0stake"
 For the purpose of this demonstration, change `voting_period` in `genesis.json` to a reduced time of 20 seconds (`20s`):
 
 ```
-cat <<< $(jq '.app_state.gov.voting_params.voting_period = "20s"' $HOME/.simapp/config/genesis.json) > $HOME/.simapp/config/genesis.json
+cat <<< $(jq '.app_state.gov.voting_params.voting_period = "20s"' $HOME/.l2app/config/genesis.json) > $HOME/.l2app/config/genesis.json
 ```
 
 Create a new key for the validator, then add a genesis account and transaction:
@@ -100,13 +100,13 @@ Create a new key for the validator, then add a genesis account and transaction:
 <!-- TODO: gentx does not read chain-id from config -->
 
 ```
-./build/simd keys add validator
-./build/simd add-genesis-account validator 5000000000stake --keyring-backend test
-./build/simd gentx validator 1000000stake --chain-id test
-./build/simd collect-gentxs
+./build/rollupd keys add validator
+./build/rollupd add-genesis-account validator 5000000000stake --keyring-backend test
+./build/rollupd gentx validator 1000000stake --chain-id test
+./build/rollupd collect-gentxs
 ```
 
-Now that our node is initialized and we are ready to start a new `simapp` chain, let's set up `cosmovisor` and the genesis binary.
+Now that our node is initialized and we are ready to start a new `l2app` chain, let's set up `cosmovisor` and the genesis binary.
 
 ### Cosmovisor Setup
 
@@ -119,8 +119,8 @@ go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor
 Set the required environment variables:
 
 ```
-export DAEMON_NAME=simd
-export DAEMON_HOME=$HOME/.simapp
+export DAEMON_NAME=rollupd
+export DAEMON_HOME=$HOME/.l2app
 ```
 
 Set the optional environment variable to trigger an automatic restart:
@@ -133,10 +133,10 @@ Create the folder for the genesis binary and copy the `v0.42.x` binary:
 
 ```
 mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
-cp ./build/simd $DAEMON_HOME/cosmovisor/genesis/bin
+cp ./build/rollupd $DAEMON_HOME/cosmovisor/genesis/bin
 ```
 
-Now that `cosmovisor` is installed and the genesis binary has been added, let's add the upgrade handler to `simapp/app.go` and prepare the upgrade binary.
+Now that `cosmovisor` is installed and the genesis binary has been added, let's add the upgrade handler to `l2app/app.go` and prepare the upgrade binary.
 
 ### Chain Upgrade
 
@@ -148,13 +148,13 @@ Check out `release/v0.44.x`:
 git checkout release/v0.44.x
 ```
 
-Add the following to `simapp/app.go` inside `NewSimApp` and after `app.UpgradeKeeper`:
+Add the following to `l2app/app.go` inside `NewSimApp` and after `app.UpgradeKeeper`:
 
 ```go
 	app.registerUpgradeHandlers()
 ```
 
-Add the following to `simapp/app.go` after `NewSimApp` (to learn more about the upgrade handler, see the [In-Place Store Migrations](../core/upgrade.html)):
+Add the following to `l2app/app.go` after `NewSimApp` (to learn more about the upgrade handler, see the [In-Place Store Migrations](../core/upgrade.html)):
 
 ```go
 func (app *SimApp) registerUpgradeHandlers() {
@@ -205,7 +205,7 @@ Add `storetypes` to imports:
 	storetypes "github.com/Finschia/finschia-sdk/store/types"
 ```
 
-Build the `simd` binary for `v0.44.x` (the upgrade binary):
+Build the `rollupd` binary for `v0.44.x` (the upgrade binary):
 
 ```
 make build
@@ -215,7 +215,7 @@ Create the folder for the upgrade binary and copy the `v0.44.x` binary:
 
 ```
 mkdir -p $DAEMON_HOME/cosmovisor/upgrades/v0.44/bin
-cp ./build/simd $DAEMON_HOME/cosmovisor/upgrades/v0.44/bin
+cp ./build/rollupd $DAEMON_HOME/cosmovisor/upgrades/v0.44/bin
 ```
 
 Now that we have added the upgrade handler and prepared the upgrade binary, we are ready to start `cosmovisor` and simulate the upgrade proposal process.
@@ -231,9 +231,9 @@ cosmovisor start
 Open a new terminal window and submit an upgrade proposal along with a deposit and a vote (these commands must be run within 20 seconds of each other):
 
 ```
-./build/simd tx gov submit-proposal software-upgrade v0.44 --title upgrade --description upgrade --upgrade-height 20 --from validator --yes
-./build/simd tx gov deposit 1 10000000stake --from validator --yes
-./build/simd tx gov vote 1 yes --from validator --yes
+./build/rollupd tx gov submit-proposal software-upgrade v0.44 --title upgrade --description upgrade --upgrade-height 20 --from validator --yes
+./build/rollupd tx gov deposit 1 10000000stake --from validator --yes
+./build/rollupd tx gov vote 1 yes --from validator --yes
 ```
 
 Confirm the chain automatically upgrades at height 20.

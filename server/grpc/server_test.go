@@ -18,7 +18,7 @@ import (
 	"google.golang.org/grpc/metadata"
 	rpb "google.golang.org/grpc/reflection/grpc_reflection_v1alpha"
 
-	"github.com/Finschia/finschia-rdk/simapp"
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-rdk/testutil/network"
 	"github.com/Finschia/finschia-sdk/client"
 	reflectionv1 "github.com/Finschia/finschia-sdk/client/grpc/reflection"
@@ -39,7 +39,7 @@ import (
 type IntegrationTestSuite struct {
 	suite.Suite
 
-	app     *simapp.SimApp
+	app     *l2app.SimApp
 	cfg     network.Config
 	network *network.Network
 	conn    *grpc.ClientConn
@@ -47,7 +47,7 @@ type IntegrationTestSuite struct {
 
 func (s *IntegrationTestSuite) SetupSuite() {
 	s.T().Log("setting up integration test suite")
-	s.app = simapp.Setup(false)
+	s.app = l2app.Setup(false)
 	s.cfg = network.DefaultConfig()
 	s.cfg.NumValidators = 1
 	s.network = network.New(s.T(), s.cfg)

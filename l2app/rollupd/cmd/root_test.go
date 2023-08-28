@@ -12,14 +12,14 @@ import (
 	octypes "github.com/Finschia/ostracon/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-sdk/client/flags"
 	"github.com/Finschia/finschia-sdk/store/types"
 )
 
 func TestNewApp(t *testing.T) {
-	encodingConfig := simapp.MakeTestEncodingConfig()
+	encodingConfig := l2app.MakeTestEncodingConfig()
 	a := appCreator{encodingConfig}
 	db := dbm.NewMemDB()
 	tempDir := t.TempDir()
@@ -31,7 +31,7 @@ func TestNewApp(t *testing.T) {
 }
 
 func TestAppExport(t *testing.T) {
-	encodingConfig := simapp.MakeTestEncodingConfig()
+	encodingConfig := l2app.MakeTestEncodingConfig()
 	logger := log.NewOCLogger(log.NewSyncWriter(os.Stdout))
 	a := appCreator{encodingConfig}
 	db := dbm.NewMemDB()
@@ -41,8 +41,8 @@ func TestAppExport(t *testing.T) {
 	ctx.Viper.Set(server.FlagPruning, types.PruningOptionNothing)
 
 	// create default genesis data and save to store
-	app := simapp.NewSimApp(logger, db, nil, true, map[int64]bool{}, tempDir, 0, encodingConfig, simapp.EmptyAppOptions{})
-	genesisState := simapp.NewDefaultGenesisState(encodingConfig.Marshaler)
+	app := l2app.NewSimApp(logger, db, nil, true, map[int64]bool{}, tempDir, 0, encodingConfig, l2app.EmptyAppOptions{})
+	genesisState := l2app.NewDefaultGenesisState(encodingConfig.Marshaler)
 	stateBytes, err := json.MarshalIndent(genesisState, "", "  ")
 	require.NoError(t, err)
 	genDoc := &octypes.GenesisDoc{}
@@ -52,7 +52,7 @@ func TestAppExport(t *testing.T) {
 	app.InitChain(
 		abci.RequestInitChain{
 			Validators:      []abci.ValidatorUpdate{},
-			ConsensusParams: simapp.DefaultConsensusParams,
+			ConsensusParams: l2app.DefaultConsensusParams,
 			AppStateBytes:   genDoc.AppState,
 		},
 	)

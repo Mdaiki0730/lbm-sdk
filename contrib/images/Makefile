@@ -1,14 +1,14 @@
-all: simd-env
+all: rollupd-env
 
-simd-env: simd-rmi
-	docker build --tag cosmossdk/simd -f simd-env/Dockerfile \
+rollupd-env: rollupd-rmi
+	docker build --tag cosmossdk/rollupd -f rollupd-env/Dockerfile \
     		$(shell git rev-parse --show-toplevel)
 
-simd-dlv: simd-rmi
-	docker build --tag cosmossdk/simd -f simd-dlv/Dockerfile \
+rollupd-dlv: rollupd-rmi
+	docker build --tag cosmossdk/rollupd -f rollupd-dlv/Dockerfile \
         	$(shell git rev-parse --show-toplevel)
 
-simd-rmi:
-	docker rmi cosmossdk/simd 2>/dev/null; true
+rollupd-rmi:
+	docker rmi cosmossdk/rollupd 2>/dev/null; true
 
-.PHONY: all simd-env simd-dlv simd-rmi
+.PHONY: all rollupd-env rollupd-dlv rollupd-rmi

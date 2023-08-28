@@ -10,9 +10,9 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
+	"github.com/Finschia/finschia-rdk/l2app"
+	simcmd "github.com/Finschia/finschia-rdk/l2app/rollupd/cmd"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/simapp"
-	simcmd "github.com/Finschia/finschia-rdk/simapp/simd/cmd"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 	genutiltest "github.com/Finschia/finschia-rdk/x/genutil/client/testutil"
 	"github.com/Finschia/finschia-sdk/client"
@@ -73,7 +73,7 @@ func TestAddGenesisAccountCmd(t *testing.T) {
 			cfg, err := genutiltest.CreateDefaultTendermintConfig(home)
 			require.NoError(t, err)
 
-			appCodec := simapp.MakeTestEncodingConfig().Marshaler
+			appCodec := l2app.MakeTestEncodingConfig().Marshaler
 			err = genutiltest.ExecInitCmd(testMbm, home, appCodec)
 			require.NoError(t, err)
 

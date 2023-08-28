@@ -7,17 +7,17 @@ WORKDIR /node
 COPY ./contrib/rosetta/node/data.tar.gz data.tar.gz
 RUN tar -zxvf data.tar.gz -C .
 
-# build simd
-WORKDIR /simd
+# build rollupd
+WORKDIR /rollupd
 COPY . ./
-RUN go build -o simd ./simapp/simd/
+RUN go build -o rollupd ./l2app/rollupd/
 
 FROM alpine
 RUN apk add gcc libc-dev python3 --no-cache
 
 ENV PATH=$PATH:/bin
 
-COPY --from=build /simd/simd /bin/simd
+COPY --from=build /rollupd/rollupd /bin/rollupd
 
 WORKDIR /rosetta
 COPY ./contrib/rosetta/configuration ./
@@ -26,6 +26,6 @@ RUN chmod +x send_funds.sh
 RUN chmod +x faucet.py
 
 COPY --from=build /node/root /root/
-WORKDIR /root/.simapp
+WORKDIR /root/.l2app
 
 RUN chmod -R 0777 ./

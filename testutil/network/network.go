@@ -23,9 +23,9 @@ import (
 	"google.golang.org/grpc"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
+	"github.com/Finschia/finschia-rdk/l2app"
+	"github.com/Finschia/finschia-rdk/l2app/params"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/simapp"
-	"github.com/Finschia/finschia-rdk/simapp/params"
 	"github.com/Finschia/finschia-rdk/testutil"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 	"github.com/Finschia/finschia-sdk/client"
@@ -54,13 +54,13 @@ var lock = new(sync.Mutex)
 // creates an ABCI Application to provide to Tendermint.
 type AppConstructor = func(val Validator) servertypes.Application
 
-// NewAppConstructor returns a new simapp AppConstructor
+// NewAppConstructor returns a new l2app AppConstructor
 func NewAppConstructor(encodingCfg params.EncodingConfig) AppConstructor {
 	return func(val Validator) servertypes.Application {
-		return simapp.NewSimApp(
+		return l2app.NewSimApp(
 			val.Ctx.Logger, dbm.NewMemDB(), nil, true, make(map[int64]bool), val.Ctx.Config.RootDir, 0,
 			encodingCfg,
-			simapp.EmptyAppOptions{},
+			l2app.EmptyAppOptions{},
 			baseapp.SetPruning(storetypes.NewPruningOptionsFromString(val.AppConfig.Pruning)),
 			baseapp.SetMinGasPrices(val.AppConfig.MinGasPrices),
 		)
@@ -97,7 +97,7 @@ type Config struct {
 // DefaultConfig returns a sane default configuration suitable for nearly all
 // testing requirements.
 func DefaultConfig() Config {
-	encCfg := simapp.MakeTestEncodingConfig()
+	encCfg := l2app.MakeTestEncodingConfig()
 
 	return Config{
 		Codec:             encCfg.Marshaler,
@@ -106,7 +106,7 @@ func DefaultConfig() Config {
 		InterfaceRegistry: encCfg.InterfaceRegistry,
 		AccountRetriever:  authtypes.AccountRetriever{},
 		AppConstructor:    NewAppConstructor(encCfg),
-		GenesisState:      simapp.ModuleBasics.DefaultGenesis(encCfg.Marshaler),
+		GenesisState:      l2app.ModuleBasics.DefaultGenesis(encCfg.Marshaler),
 		// 2 second confirm may make some tests to be failed with `tx already in mempool`
 		TimeoutCommit:   1 * time.Second,
 		ChainID:         "chain-" + ostrand.NewRand().Str(6),
@@ -250,7 +250,7 @@ func New(t *testing.T, cfg Config) *Network {
 		ctx.Logger = logger
 
 		nodeDirName := fmt.Sprintf("node%d", i)
-		nodeDir := filepath.Join(network.BaseDir, nodeDirName, "simd")
+		nodeDir := filepath.Join(network.BaseDir, nodeDirName, "rollupd")
 		clientDir := filepath.Join(network.BaseDir, nodeDirName, "simcli")
 		gentxsDir := filepath.Join(network.BaseDir, "gentxs")
 

@@ -1,4 +1,4 @@
-package simapp
+package l2app
 
 import (
 	"encoding/json"
@@ -8,8 +8,8 @@ import (
 	"github.com/Finschia/ostracon/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
+	"github.com/Finschia/finschia-rdk/l2app/helpers"
 	"github.com/Finschia/finschia-sdk/codec"
-	"github.com/Finschia/finschia-rdk/simapp/helpers"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/Finschia/finschia-sdk/types/kv"
 	"github.com/Finschia/finschia-sdk/types/module"

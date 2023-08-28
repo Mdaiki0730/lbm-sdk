@@ -14,7 +14,7 @@ import (
 	"github.com/Finschia/ostracon/libs/log"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	"github.com/Finschia/finschia-rdk/simapp"
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/client/tx"
 	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
@@ -28,7 +28,7 @@ import (
 	minttypes "github.com/Finschia/finschia-sdk/x/mint/types"
 )
 
-var blockMaxGas = uint64(simapp.DefaultConsensusParams.Block.MaxGas)
+var blockMaxGas = uint64(l2app.DefaultConsensusParams.Block.MaxGas)
 
 func TestBaseApp_BlockGas(t *testing.T) {
 	testcases := []struct {
@@ -46,7 +46,7 @@ func TestBaseApp_BlockGas(t *testing.T) {
 	}
 	for _, tc := range testcases {
 		t.Run(tc.name, func(t *testing.T) {
-			var app *simapp.SimApp
+			var app *l2app.SimApp
 			routerOpt := func(bapp *baseapp.BaseApp) {
 				route := (&testdata.TestMsg{}).Route()
 				bapp.Router().AddRoute(sdk.NewRoute(route, func(ctx sdk.Context, msg sdk.Msg) (*sdk.Result, error) {
@@ -62,18 +62,18 @@ func TestBaseApp_BlockGas(t *testing.T) {
 					return &sdk.Result{}, nil
 				}))
 			}
-			encCfg := simapp.MakeTestEncodingConfig()
+			encCfg := l2app.MakeTestEncodingConfig()
 			encCfg.Amino.RegisterConcrete(&testdata.TestMsg{}, "testdata.TestMsg", nil)
 			encCfg.InterfaceRegistry.RegisterImplementations((*sdk.Msg)(nil),
 				&testdata.TestMsg{},
 			)
-			app = simapp.NewSimApp(log.NewNopLogger(), dbm.NewMemDB(), nil, true, map[int64]bool{}, "", 0, encCfg, simapp.EmptyAppOptions{}, routerOpt)
-			genState := simapp.NewDefaultGenesisState(encCfg.Marshaler)
+			app = l2app.NewSimApp(log.NewNopLogger(), dbm.NewMemDB(), nil, true, map[int64]bool{}, "", 0, encCfg, l2app.EmptyAppOptions{}, routerOpt)
+			genState := l2app.NewDefaultGenesisState(encCfg.Marshaler)
 			stateBytes, err := json.MarshalIndent(genState, "", " ")
 			require.NoError(t, err)
 			app.InitChain(abci.RequestInitChain{
 				Validators:      []abci.ValidatorUpdate{},
-				ConsensusParams: simapp.DefaultConsensusParams,
+				ConsensusParams: l2app.DefaultConsensusParams,
 				AppStateBytes:   stateBytes,
 			})
 

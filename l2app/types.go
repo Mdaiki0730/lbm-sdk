@@ -1,4 +1,4 @@
-package simapp
+package l2app
 
 import (
 	abci "github.com/tendermint/tendermint/abci/types"

@@ -3,16 +3,16 @@ set -euo pipefail
 set -x
 
 DEBUG=${DEBUG:-0}
-BINARY=/simd/${BINARY:-simd}
+BINARY=/rollupd/${BINARY:-rollupd}
 ID=${ID:-0}
-LOG=${LOG:-simd.log}
+LOG=${LOG:-rollupd.log}
 
 if ! [ -f "${BINARY}" ]; then
-	echo "The binary $(basename "${BINARY}") cannot be found. Please add the binary to the shared folder. Please use the BINARY environment variable if the name of the binary is not 'simd'"
+	echo "The binary $(basename "${BINARY}") cannot be found. Please add the binary to the shared folder. Please use the BINARY environment variable if the name of the binary is not 'rollupd'"
 	exit 1
 fi
 
-export SIMDHOME="/data/node${ID}/simd"
+export SIMDHOME="/data/node${ID}/rollupd"
 
 if [ "$DEBUG" -eq 1 ]; then
   dlv --listen=:2345 --continue --headless=true --api-version=2 --accept-multiclient exec "${BINARY}" -- --home "${SIMDHOME}" "$@"

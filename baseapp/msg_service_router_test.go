@@ -12,7 +12,7 @@ import (
 	"github.com/Finschia/ostracon/libs/log"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	"github.com/Finschia/finschia-rdk/simapp"
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-sdk/client/tx"
 	"github.com/Finschia/finschia-sdk/testutil/testdata"
 	"github.com/Finschia/finschia-sdk/types/tx/signing"
@@ -23,7 +23,7 @@ func TestRegisterMsgService(t *testing.T) {
 	db := dbm.NewMemDB()
 
 	// Create an encoding config that doesn't register testdata Msg services.
-	encCfg := simapp.MakeTestEncodingConfig()
+	encCfg := l2app.MakeTestEncodingConfig()
 	app := baseapp.NewBaseApp("test", log.NewOCLogger(log.NewSyncWriter(os.Stdout)), db, encCfg.TxConfig.TxDecoder())
 	app.SetInterfaceRegistry(encCfg.InterfaceRegistry)
 	require.Panics(t, func() {
@@ -46,7 +46,7 @@ func TestRegisterMsgService(t *testing.T) {
 func TestRegisterMsgServiceTwice(t *testing.T) {
 	// Setup baseapp.
 	db := dbm.NewMemDB()
-	encCfg := simapp.MakeTestEncodingConfig()
+	encCfg := l2app.MakeTestEncodingConfig()
 	app := baseapp.NewBaseApp("test", log.NewOCLogger(log.NewSyncWriter(os.Stdout)), db, encCfg.TxConfig.TxDecoder())
 	app.SetInterfaceRegistry(encCfg.InterfaceRegistry)
 	testdata.RegisterInterfaces(encCfg.InterfaceRegistry)
@@ -70,7 +70,7 @@ func TestRegisterMsgServiceTwice(t *testing.T) {
 
 func TestMsgService(t *testing.T) {
 	priv, _, _ := testdata.KeyTestPubAddr()
-	encCfg := simapp.MakeTestEncodingConfig()
+	encCfg := l2app.MakeTestEncodingConfig()
 	testdata.RegisterInterfaces(encCfg.InterfaceRegistry)
 	db := dbm.NewMemDB()
 	app := baseapp.NewBaseApp("test", log.NewOCLogger(log.NewSyncWriter(os.Stdout)), db, encCfg.TxConfig.TxDecoder())

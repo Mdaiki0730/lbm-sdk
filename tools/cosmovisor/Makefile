@@ -7,17 +7,17 @@ DEBUG=true
 install:
 	go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@$(COSMOVISOR_TAG)
 
-install-simd:
+install-rollupd:
 	go install ./../../...
 
-.PHONY: install install-simd
+.PHONY: install install-rollupd
 
 test: test-single
 
 test-single: test-single-manual-download test-single-auto-download
 
-test-single-manual-download: install install-simd
+test-single-manual-download: install install-rollupd
 	DEBUG=$(DEBUG) sh test_single.sh
 
-test-single-auto-download: install install-simd
+test-single-auto-download: install install-rollupd
 	DEBUG=$(DEBUG) DAEMON_ALLOW_DOWNLOAD_BINARIES=true sh test_single.sh

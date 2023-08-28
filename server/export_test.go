@@ -20,8 +20,8 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/simapp"
 	"github.com/Finschia/finschia-rdk/x/genutil"
 	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/client/flags"
@@ -47,13 +47,13 @@ func TestExportCmd_ConsensusParams(t *testing.T) {
 	}
 
 	require.Equal(t, genDoc.ConsensusParams.Block.TimeIotaMs, exportedGenDoc.ConsensusParams.Block.TimeIotaMs)
-	require.Equal(t, simapp.DefaultConsensusParams.Block.MaxBytes, exportedGenDoc.ConsensusParams.Block.MaxBytes)
-	require.Equal(t, simapp.DefaultConsensusParams.Block.MaxGas, exportedGenDoc.ConsensusParams.Block.MaxGas)
+	require.Equal(t, l2app.DefaultConsensusParams.Block.MaxBytes, exportedGenDoc.ConsensusParams.Block.MaxBytes)
+	require.Equal(t, l2app.DefaultConsensusParams.Block.MaxGas, exportedGenDoc.ConsensusParams.Block.MaxGas)
 
-	require.Equal(t, simapp.DefaultConsensusParams.Evidence.MaxAgeDuration, exportedGenDoc.ConsensusParams.Evidence.MaxAgeDuration)
-	require.Equal(t, simapp.DefaultConsensusParams.Evidence.MaxAgeNumBlocks, exportedGenDoc.ConsensusParams.Evidence.MaxAgeNumBlocks)
+	require.Equal(t, l2app.DefaultConsensusParams.Evidence.MaxAgeDuration, exportedGenDoc.ConsensusParams.Evidence.MaxAgeDuration)
+	require.Equal(t, l2app.DefaultConsensusParams.Evidence.MaxAgeNumBlocks, exportedGenDoc.ConsensusParams.Evidence.MaxAgeNumBlocks)
 
-	require.Equal(t, simapp.DefaultConsensusParams.Validator.PubKeyTypes, exportedGenDoc.ConsensusParams.Validator.PubKeyTypes)
+	require.Equal(t, l2app.DefaultConsensusParams.Validator.PubKeyTypes, exportedGenDoc.ConsensusParams.Validator.PubKeyTypes)
 }
 
 func TestExportCmd_HomeDir(t *testing.T) {
@@ -121,15 +121,15 @@ func TestExportCmd_Height(t *testing.T) {
 	}
 }
 
-func setupApp(t *testing.T, tempDir string) (*simapp.SimApp, context.Context, *octypes.GenesisDoc, *cobra.Command) {
+func setupApp(t *testing.T, tempDir string) (*l2app.SimApp, context.Context, *octypes.GenesisDoc, *cobra.Command) {
 	if err := createConfigFolder(tempDir); err != nil {
 		t.Fatalf("error creating config folder: %s", err)
 	}
 
 	logger := log.NewOCLogger(log.NewSyncWriter(os.Stdout))
 	db := dbm.NewMemDB()
-	encCfg := simapp.MakeTestEncodingConfig()
-	app := simapp.NewSimApp(logger, db, nil, true, map[int64]bool{}, tempDir, 0, encCfg, simapp.EmptyAppOptions{})
+	encCfg := l2app.MakeTestEncodingConfig()
+	app := l2app.NewSimApp(logger, db, nil, true, map[int64]bool{}, tempDir, 0, encCfg, l2app.EmptyAppOptions{})
 
 	serverCtx := server.NewDefaultContext()
 	serverCtx.Config.RootDir = tempDir
@@ -141,7 +141,7 @@ func setupApp(t *testing.T, tempDir string) (*simapp.SimApp, context.Context, *o
 	app.InitChain(
 		abci.RequestInitChain{
 			Validators:      []abci.ValidatorUpdate{},
-			ConsensusParams: simapp.DefaultConsensusParams,
+			ConsensusParams: l2app.DefaultConsensusParams,
 			AppStateBytes:   genDoc.AppState,
 		},
 	)
@@ -149,17 +149,17 @@ func setupApp(t *testing.T, tempDir string) (*simapp.SimApp, context.Context, *o
 
 	cmd := server.ExportCmd(
 		func(_ log.Logger, _ dbm.DB, _ io.Writer, height int64, forZeroHeight bool, jailAllowedAddrs []string, appOptons types.AppOptions) (types.ExportedApp, error) {
-			encCfg := simapp.MakeTestEncodingConfig()
+			encCfg := l2app.MakeTestEncodingConfig()
 
-			var simApp *simapp.SimApp
+			var simApp *l2app.SimApp
 			if height != -1 {
-				simApp = simapp.NewSimApp(logger, db, nil, false, map[int64]bool{}, "", 0, encCfg, appOptons)
+				simApp = l2app.NewSimApp(logger, db, nil, false, map[int64]bool{}, "", 0, encCfg, appOptons)
 
 				if err := simApp.LoadHeight(height); err != nil {
 					return types.ExportedApp{}, err
 				}
 			} else {
-				simApp = simapp.NewSimApp(logger, db, nil, true, map[int64]bool{}, "", 0, encCfg, appOptons)
+				simApp = l2app.NewSimApp(logger, db, nil, true, map[int64]bool{}, "", 0, encCfg, appOptons)
 			}
 
 			return simApp.ExportAppStateAndValidators(forZeroHeight, jailAllowedAddrs)
@@ -177,7 +177,7 @@ func createConfigFolder(dir string) error {
 }
 
 func newDefaultGenesisDoc(cdc codec.Codec) *octypes.GenesisDoc {
-	genesisState := simapp.NewDefaultGenesisState(cdc)
+	genesisState := l2app.NewDefaultGenesisState(cdc)
 
 	stateBytes, err := json.MarshalIndent(genesisState, "", "  ")
 	if err != nil {

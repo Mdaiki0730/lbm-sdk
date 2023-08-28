@@ -1,4 +1,4 @@
-package simapp
+package l2app
 
 import (
 	"encoding/json"
@@ -18,7 +18,7 @@ import (
 	ostos "github.com/Finschia/ostracon/libs/os"
 
 	"github.com/Finschia/finschia-rdk/baseapp"
-	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
+	simappparams "github.com/Finschia/finschia-rdk/l2app/params"
 	"github.com/Finschia/finschia-rdk/store/streaming"
 	"github.com/Finschia/finschia-rdk/version"
 	"github.com/Finschia/finschia-rdk/x/genutil"
@@ -214,7 +214,7 @@ func init() {
 		panic(err)
 	}
 
-	DefaultNodeHome = filepath.Join(userHomeDir, ".simapp")
+	DefaultNodeHome = filepath.Join(userHomeDir, ".l2app")
 }
 
 // NewSimApp returns a reference to an initialized SimApp.

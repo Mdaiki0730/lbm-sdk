@@ -21,7 +21,7 @@ cleanup() {
 }
 trap cleanup TERM INT EXIT
 
-export DAEMON_NAME=simd
+export DAEMON_NAME=rollupd
 
 # make a temporary working directory
 workdir=$(mktemp -d)

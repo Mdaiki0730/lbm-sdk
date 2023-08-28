@@ -1,10 +1,10 @@
-package simapp_test
+package l2app_test
 
 import (
 	"testing"
 	"time"
 
-	"github.com/Finschia/finschia-rdk/simapp"
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
 	sdk "github.com/Finschia/finschia-sdk/types"
 	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
@@ -24,26 +24,26 @@ func TestSimGenesisAccountValidate(t *testing.T) {
 
 	testCases := []struct {
 		name    string
-		sga     simapp.SimGenesisAccount
+		sga     l2app.SimGenesisAccount
 		wantErr bool
 	}{
 		{
 			"valid basic account",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount: baseAcc,
 			},
 			false,
 		},
 		{
 			"invalid basic account with mismatching address/pubkey",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount: authtypes.NewBaseAccount(addr, secp256k1.GenPrivKey().PubKey(), 0, 0),
 			},
 			true,
 		},
 		{
 			"valid basic account with module name",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount: authtypes.NewBaseAccount(sdk.AccAddress(crypto.AddressHash([]byte("testmod"))), nil, 0, 0),
 				ModuleName:  "testmod",
 			},
@@ -51,7 +51,7 @@ func TestSimGenesisAccountValidate(t *testing.T) {
 		},
 		{
 			"valid basic account with invalid module name/pubkey pair",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount: baseAcc,
 				ModuleName:  "testmod",
 			},
@@ -59,7 +59,7 @@ func TestSimGenesisAccountValidate(t *testing.T) {
 		},
 		{
 			"valid basic account with valid vesting attributes",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount:     baseAcc,
 				OriginalVesting: coins,
 				StartTime:       vestingStart.Unix(),
@@ -69,7 +69,7 @@ func TestSimGenesisAccountValidate(t *testing.T) {
 		},
 		{
 			"valid basic account with invalid vesting end time",
-			simapp.SimGenesisAccount{
+			l2app.SimGenesisAccount{
 				BaseAccount:     baseAcc,
 				OriginalVesting: coins,
 				StartTime:       vestingStart.Add(2 * time.Hour).Unix(),

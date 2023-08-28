@@ -1,4 +1,4 @@
-package simapp
+package l2app
 
 import (
 	"bytes"
@@ -23,7 +23,7 @@ import (
 	octypes "github.com/Finschia/ostracon/types"
 
 	bam "github.com/Finschia/finschia-rdk/baseapp"
-	"github.com/Finschia/finschia-rdk/simapp/helpers"
+	"github.com/Finschia/finschia-rdk/l2app/helpers"
 	"github.com/Finschia/finschia-sdk/client"
 	"github.com/Finschia/finschia-sdk/crypto/keys/ed25519"
 	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
@@ -96,7 +96,7 @@ func Setup(isCheckTx bool) *SimApp {
 
 // SetupWithGenesisValSet initializes a new SimApp with a validator set and genesis accounts
 // that also act as delegators. For simplicity, each validator is bonded with a delegation
-// of one consensus engine unit (10^6) in the default token of the simapp from first genesis
+// of one consensus engine unit (10^6) in the default token of the l2app from first genesis
 // account. A Nop logger is set in SimApp.
 //func SetupWithGenesisValSet(t *testing.T, valSet *octypes.ValidatorSet, genAccs []authtypes.GenesisAccount, balances ...banktypes.Balance) *SimApp {
 //	app, genesisState := setup(true, 5)

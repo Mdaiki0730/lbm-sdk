@@ -1,14 +1,14 @@
 # Simple usage with a mounted data directory:
-# > docker build --platform="linux/amd64" -t simapp . --build-arg ARCH=x86_64
+# > docker build --platform="linux/amd64" -t l2app . --build-arg ARCH=x86_64
 #
 # Server:
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simapp:/root/.simapp simapp simd init test-chain
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.l2app:/root/.l2app l2app rollupd init test-chain
 # TODO: need to set validator in genesis so start runs
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simapp:/root/.simapp simapp simd start
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.l2app:/root/.l2app l2app rollupd start
 #
-# Client: (Note the simapp binary always looks at ~/.simapp we can bind to different local storage)
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simappcli:/root/.simapp simapp simd keys add foo
-# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simappcli:/root/.simapp simapp simd keys list
+# Client: (Note the l2app binary always looks at ~/.l2app we can bind to different local storage)
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simappcli:/root/.l2app l2app rollupd keys add foo
+# > docker run -it -p 26657:26657 -p 26656:26656 -v ~/.simappcli:/root/.l2app l2app rollupd keys list
 # TODO: demo connecting rest-server (or is this in server now?)
 FROM golang:alpine AS build-env
 ARG ARCH=$ARCH
@@ -33,7 +33,7 @@ RUN go mod download
 # Add source files
 COPY . .
 
-# install simapp, remove packages
+# install l2app, remove packages
 RUN make build CGO_ENABLED=1
 
 # Final image
@@ -44,9 +44,9 @@ RUN apk add --update --no-cache  ca-certificates libstdc++
 WORKDIR /root
 
 # Copy over binaries from the build-env
-COPY --from=build-env /go/src/github.com/Finschia/finschia-rdk/build/simd /usr/bin/simd
+COPY --from=build-env /go/src/github.com/Finschia/finschia-rdk/build/rollupd /usr/bin/rollupd
 
 EXPOSE 26656 26657 1317 9090
 
-# Run simd by default, omit entrypoint to ease using container with simcli
-CMD ["simd"]
+# Run rollupd by default, omit entrypoint to ease using container with simcli
+CMD ["rollupd"]

@@ -10,8 +10,8 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-rdk/server"
-	"github.com/Finschia/finschia-rdk/simapp"
 	genutiltest "github.com/Finschia/finschia-rdk/x/genutil/client/testutil"
 	genutiltypes "github.com/Finschia/finschia-rdk/x/genutil/types"
 	"github.com/Finschia/finschia-sdk/client"
@@ -21,12 +21,12 @@ import (
 
 func Test_TestnetCmd(t *testing.T) {
 	home := t.TempDir()
-	encodingConfig := simapp.MakeTestEncodingConfig()
+	encodingConfig := l2app.MakeTestEncodingConfig()
 	logger := log.NewNopLogger()
 	cfg, err := genutiltest.CreateDefaultTendermintConfig(home)
 	require.NoError(t, err)
 
-	err = genutiltest.ExecInitCmd(simapp.ModuleBasics, home, encodingConfig.Marshaler)
+	err = genutiltest.ExecInitCmd(l2app.ModuleBasics, home, encodingConfig.Marshaler)
 	require.NoError(t, err)
 
 	serverCtx := server.NewContext(viper.New(), cfg, logger)
@@ -38,7 +38,7 @@ func Test_TestnetCmd(t *testing.T) {
 	ctx := context.Background()
 	ctx = context.WithValue(ctx, server.ServerContextKey, serverCtx)
 	ctx = context.WithValue(ctx, client.ClientContextKey, &clientCtx)
-	cmd := testnetCmd(simapp.ModuleBasics, banktypes.GenesisBalancesIterator{})
+	cmd := testnetCmd(l2app.ModuleBasics, banktypes.GenesisBalancesIterator{})
 	cmd.SetArgs([]string{fmt.Sprintf("--%s=test", flags.FlagKeyringBackend), fmt.Sprintf("--output-dir=%s", home)})
 	err = cmd.ExecuteContext(ctx)
 	require.NoError(t, err)

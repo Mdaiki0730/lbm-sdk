@@ -1,7 +1,7 @@
-package simapp
+package l2app
 
 import (
-	simappparams "github.com/Finschia/finschia-rdk/simapp/params"
+	simappparams "github.com/Finschia/finschia-rdk/l2app/params"
 	"github.com/Finschia/finschia-sdk/std"
 )
 

@@ -32,7 +32,7 @@ The `RosettaCommand` function builds the `rosetta` root command and is defined i
 
 Since we’ve updated the Cosmos SDK to work with the Rosetta API, updating the application's root command file is all you need to do.
 
-An implementation example can be found in `simapp` package.
+An implementation example can be found in `l2app` package.
 
 ## Use Rosetta Command
 
@@ -128,6 +128,6 @@ func buildAppCommand(rootCmd *cobra.Command) {
 }
 ```
 
-A full implementation example can be found in `simapp` package.
+A full implementation example can be found in `l2app` package.
 
 NOTE: when using a customized client, the command cannot be used as the constructors required **may** differ, so it's required to create a new one. We intend to provide a way to init a customized client without writing extra code in the future.

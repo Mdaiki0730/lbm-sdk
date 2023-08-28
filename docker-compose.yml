@@ -3,11 +3,11 @@ version: "3"
 services:
   simdnode0:
     container_name: simdnode0
-    image: "cosmossdk/simd"
+    image: "cosmossdk/rollupd"
     environment:
       - DEBUG=1
       - ID=0
-      - LOG=${LOG:-simd.log}
+      - LOG=${LOG:-rollupd.log}
     cap_add:
       - SYS_PTRACE
     security_opt:
@@ -25,11 +25,11 @@ services:
 
   simdnode1:
     container_name: simdnode1
-    image: "cosmossdk/simd"
+    image: "cosmossdk/rollupd"
     environment:
       - DEBUG=0
       - ID=1
-      - LOG=${LOG:-simd.log}
+      - LOG=${LOG:-rollupd.log}
     cap_add:
       - SYS_PTRACE
     security_opt:
@@ -47,11 +47,11 @@ services:
 
   simdnode2:
     container_name: simdnode2
-    image: "cosmossdk/simd"
+    image: "cosmossdk/rollupd"
     environment:
       - DEBUG=0
       - ID=2
-      - LOG=${LOG:-simd.log}
+      - LOG=${LOG:-rollupd.log}
     cap_add:
       - SYS_PTRACE
     security_opt:
@@ -69,11 +69,11 @@ services:
 
   simdnode3:
     container_name: simdnode3
-    image: "cosmossdk/simd"
+    image: "cosmossdk/rollupd"
     environment:
       - DEBUG=0
       - ID=3
-      - LOG=${LOG:-simd.log}
+      - LOG=${LOG:-rollupd.log}
     cap_add:
       - SYS_PTRACE
     security_opt:

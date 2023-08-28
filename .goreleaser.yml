@@ -2,9 +2,9 @@ before:
   hooks:
     - go mod tidy
 builds:
-  - id: simd-linux-amd64
-    main: ./simapp/simd
-    binary: simd
+  - id: rollupd-linux-amd64
+    main: ./l2app/rollupd
+    binary: rollupd
     goos:
       - linux
     goarch:
@@ -20,9 +20,9 @@ builds:
     ldflags:
       - "{{ .Env.BUILD_VARS }}"
 
-  - id: simd-linux-arm64
-    main: ./simapp/simd
-    binary: simd
+  - id: rollupd-linux-arm64
+    main: ./l2app/rollupd
+    binary: rollupd
     goos:
       - linux
     goarch:
@@ -38,9 +38,9 @@ builds:
     ldflags:
       - "{{ .Env.BUILD_VARS }}"
 
-  - id: simd-darwin-amd64
-    main: ./simapp/simd
-    binary: simd
+  - id: rollupd-darwin-amd64
+    main: ./l2app/rollupd
+    binary: rollupd
     goos:
       - darwin
     goarch:
@@ -56,9 +56,9 @@ builds:
     ldflags:
       - "{{ .Env.BUILD_VARS }}"
 
-  - id: simd-darwin-arm64
-    main: ./simapp/simd
-    binary: simd
+  - id: rollupd-darwin-arm64
+    main: ./l2app/rollupd
+    binary: rollupd
     goos:
       - darwin
     goarch:
@@ -78,10 +78,10 @@ archives:
   -
     id: bin-archive
     builds:
-      - simd-linux-amd64
-      - simd-linux-arm64
-      - simd-darwin-amd64
-      - simd-darwin-arm64
+      - rollupd-linux-amd64
+      - rollupd-linux-arm64
+      - rollupd-darwin-amd64
+      - rollupd-darwin-arm64
     format: tar.gz
     name_template: "simd_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
     wrap_in_directory: true

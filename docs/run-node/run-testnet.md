@@ -4,9 +4,9 @@ order: 7
 
 # Running a Testnet
 
-The `simd testnet` subcommand makes it easy to initialize and start a simulated test network for testing purposes. {synopsis}
+The `rollupd testnet` subcommand makes it easy to initialize and start a simulated test network for testing purposes. {synopsis}
 
-In addition to the commands for [running a node](./run-node.html), the `simd` binary also includes a `testnet` command that allows you to start a simulated test network in-process or to initialize files for a simulated test network that runs in a separate process.
+In addition to the commands for [running a node](./run-node.html), the `rollupd` binary also includes a `testnet` command that allows you to start a simulated test network in-process or to initialize files for a simulated test network that runs in a separate process.
 
 ## Initialize Files
 
@@ -19,7 +19,7 @@ The `init-files` subcommand initializes the necessary files to run a test networ
 In order to initialize the files for a test network, run the following command:
 
 ```bash
-simd testnet init-files
+rollupd testnet init-files
 ```
 
 You should see the following output in your terminal:
@@ -36,7 +36,7 @@ The `gentxs` directory includes a genesis transaction for each validator node. E
 
 ### nodes
 
-A node directory is created for each validator node. Within each node directory is a `simd` directory. The `simd` directory is the home directory for each node, which includes the configuration and data files for that node (i.e. the same files included in the default `~/.simapp` directory when running a single node).
+A node directory is created for each validator node. Within each node directory is a `rollupd` directory. The `rollupd` directory is the home directory for each node, which includes the configuration and data files for that node (i.e. the same files included in the default `~/.l2app` directory when running a single node).
 
 ## Start Testnet
 
@@ -47,7 +47,7 @@ The `start` subcommand both initializes and starts an in-process test network. T
 You can start the local test network by running the following command:
 
 ```bash
-simd testnet start
+rollupd testnet start
 ```
 
 You should see something similar to the following:
@@ -77,19 +77,19 @@ The first validator node is now running in-process, which means the test network
 Check the status of the first validator node:
 
 ```
-simd status
+rollupd status
 ```
 
 Import the key from the provided mnemonic:
 
 ```
-simd keys add test --recover --keyring-backend test
+rollupd keys add test --recover --keyring-backend test
 ```
 
 Check the balance of the account address:
 
 ```
-simd q bank balances [address]
+rollupd q bank balances [address]
 ```
 
 Use this test account to manually test against the test network.

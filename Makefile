@@ -7,7 +7,7 @@ COMMIT := $(shell git log -1 --format='%H')
 LEDGER_ENABLED ?= true
 BINDIR ?= $(GOPATH)/bin
 BUILDDIR ?= $(CURDIR)/build
-SIMAPP = ./simapp
+SIMAPP = ./l2app
 MOCKS_DIR = $(CURDIR)/tests/mocks
 HTTPS_GIT := https://github.com/Finschia/finschia-sdk.git
 DOCKER := $(shell which docker)
@@ -94,7 +94,7 @@ build_tags_comma_sep := $(subst $(whitespace),$(comma),$(build_tags))
 # process linker flags
 
 ldflags = -X github.com/Finschia/finschia-rdk/version.Name=sim \
-		  -X github.com/Finschia/finschia-rdk/version.AppName=simd \
+		  -X github.com/Finschia/finschia-rdk/version.AppName=rollupd \
 		  -X github.com/Finschia/finschia-rdk/version.Version=$(VERSION) \
 		  -X github.com/Finschia/finschia-rdk/version.Commit=$(COMMIT) \
 		  -X github.com/Finschia/finschia-rdk/types.DBBackend=$(DB_BACKEND) \
@@ -126,7 +126,7 @@ BUILD_TARGETS := build install
 build: BUILD_ARGS=-o $(BUILDDIR)/
 
 build-docker: go.sum $(BUILDDIR)/
-	docker build -t simapp:latest . --platform="linux/amd64" --build-arg ARCH=$(ARCH)
+	docker build -t l2app:latest . --platform="linux/amd64" --build-arg ARCH=$(ARCH)
 
 # todo: should be fix
 build-linux:
@@ -509,13 +509,13 @@ proto-update-deps:
 ###############################################################################
 
 localnet-build-env:
-	$(MAKE) -C contrib/images simd-env
+	$(MAKE) -C contrib/images rollupd-env
 
 localnet-build-dlv:
-	$(MAKE) -C contrib/images simd-dlv
+	$(MAKE) -C contrib/images rollupd-dlv
 
 localnet-build-nodes:
-	$(DOCKER) run --rm -v $(CURDIR)/.testnets:/data cosmossdk/simd \
+	$(DOCKER) run --rm -v $(CURDIR)/.testnets:/data cosmossdk/rollupd \
 			  testnet init-files --v 4 -o /data --starting-ip-address 192.168.10.2 --keyring-backend=test
 	docker-compose up -d
 
@@ -523,11 +523,11 @@ localnet-stop:
 	docker-compose down
 
 # localnet-start will run a 4-node testnet locally. The nodes are
-# based off the docker images in: ./contrib/images/simd-env
+# based off the docker images in: ./contrib/images/rollupd-env
 localnet-start: localnet-stop localnet-build-env localnet-build-nodes
 
 # localnet-debug will run a 4-node testnet locally in debug mode
-# you can read more about the debug mode here: ./contrib/images/simd-dlv/README.md
+# you can read more about the debug mode here: ./contrib/images/rollupd-dlv/README.md
 localnet-debug: localnet-stop localnet-build-dlv localnet-build-nodes
 
 .PHONY: localnet-start localnet-stop localnet-debug localnet-build-env \

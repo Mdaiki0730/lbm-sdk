@@ -37,7 +37,7 @@ make build
 make install
 
 # you can see the version!
-simd version
+rollupd version
 ```
 
 &nbsp;
@@ -52,12 +52,12 @@ zsh init_node.sh sim {N(number of nodes), default=1}
 **Run**
 ```
 # run a node
-simd start --home ~/.simapp/simapp0
+rollupd start --home ~/.l2app/simapp0
 
 # If N is larger than 1, run all node.
 # simapp0 has other nodes as persistant_peer. 
-simd start --home ~/.simapp/simapp0
-simd start --home ~/.simapp/simapp1
+rollupd start --home ~/.l2app/simapp0
+rollupd start --home ~/.l2app/simapp1
 ...
 ```
 

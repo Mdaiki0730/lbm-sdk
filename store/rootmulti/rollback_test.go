@@ -12,20 +12,20 @@ import (
 
 	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/Finschia/finschia-rdk/simapp"
+	"github.com/Finschia/finschia-rdk/l2app"
 )
 
-func setup(withGenesis bool, invCheckPeriod uint, db dbm.DB) (*simapp.SimApp, simapp.GenesisState) {
-	encCdc := simapp.MakeTestEncodingConfig()
-	app := simapp.NewSimApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, simapp.DefaultNodeHome, invCheckPeriod, encCdc, simapp.EmptyAppOptions{})
+func setup(withGenesis bool, invCheckPeriod uint, db dbm.DB) (*l2app.SimApp, l2app.GenesisState) {
+	encCdc := l2app.MakeTestEncodingConfig()
+	app := l2app.NewSimApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, l2app.DefaultNodeHome, invCheckPeriod, encCdc, l2app.EmptyAppOptions{})
 	if withGenesis {
-		return app, simapp.NewDefaultGenesisState(encCdc.Marshaler)
+		return app, l2app.NewDefaultGenesisState(encCdc.Marshaler)
 	}
-	return app, simapp.GenesisState{}
+	return app, l2app.GenesisState{}
 }
 
 // Setup initializes a new SimApp. A Nop logger is set in SimApp.
-func SetupWithDB(isCheckTx bool, db dbm.DB) *simapp.SimApp {
+func SetupWithDB(isCheckTx bool, db dbm.DB) *l2app.SimApp {
 	app, genesisState := setup(!isCheckTx, 5, db)
 	if !isCheckTx {
 		// init chain must be called to stop deliverState from being nil
@@ -38,7 +38,7 @@ func SetupWithDB(isCheckTx bool, db dbm.DB) *simapp.SimApp {
 		app.InitChain(
 			abci.RequestInitChain{
 				Validators:      []abci.ValidatorUpdate{},
-				ConsensusParams: simapp.DefaultConsensusParams,
+				ConsensusParams: l2app.DefaultConsensusParams,
 				AppStateBytes:   stateBytes,
 			},
 		)
@@ -76,8 +76,8 @@ func TestRollback(t *testing.T) {
 	require.Equal(t, target, app.LastBlockHeight())
 
 	// recreate app to have clean check state
-	encCdc := simapp.MakeTestEncodingConfig()
-	app = simapp.NewSimApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, simapp.DefaultNodeHome, 5, encCdc, simapp.EmptyAppOptions{})
+	encCdc := l2app.MakeTestEncodingConfig()
+	app = l2app.NewSimApp(log.NewNopLogger(), db, nil, true, map[int64]bool{}, l2app.DefaultNodeHome, 5, encCdc, l2app.EmptyAppOptions{})
 	store = app.NewContext(true, tmproto.Header{}).KVStore(app.GetKey("bank"))
 	require.Equal(t, []byte("value5"), store.Get([]byte("key")))
 

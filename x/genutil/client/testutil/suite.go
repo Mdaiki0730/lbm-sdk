@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
+	"github.com/Finschia/finschia-rdk/l2app"
 	"github.com/Finschia/finschia-rdk/x/genutil/client/cli"
 	"github.com/Finschia/finschia-sdk/client/flags"
-	"github.com/Finschia/finschia-sdk/simapp"
 	clitestutil "github.com/Finschia/finschia-sdk/testutil/cli"
 	"github.com/Finschia/finschia-sdk/testutil/network"
 	sdk "github.com/Finschia/finschia-sdk/types"
@@ -104,7 +104,7 @@ func (s *IntegrationTestSuite) TestGenTxCmd() {
 
 		s.Run(tc.name, func() {
 			cmd := cli.GenTxCmd(
-				simapp.ModuleBasics,
+				l2app.ModuleBasics,
 				val.ClientCtx.TxConfig,
 				banktypes.GenesisBalancesIterator{},
 				val.ClientCtx.HomeDir)

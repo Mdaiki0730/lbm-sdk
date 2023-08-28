@@ -10,7 +10,7 @@ If we start a single node, we won't be able to debug transactions as the machine
 
 But the current `localnet-start` does not provide us with debugging tools so that's why there is a different image for debugging a local network, that is to avoid any issues in the future were debugging won't be needed.
 
-Both `simd-env` and `simd-dlv` work and run the same, except that `simd-dlv` uses `go-delve` to run the binaries.
+Both `rollupd-env` and `rollupd-dlv` work and run the same, except that `rollupd-dlv` uses `go-delve` to run the binaries.
 
 ## How to use
 

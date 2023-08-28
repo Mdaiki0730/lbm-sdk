@@ -1,5 +1,5 @@
 #!/bin/sh
 
-# dummy for simd
+# dummy for rollupd
 echo "I'm a new binary!"
 echo "Chain continues..."

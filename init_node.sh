@@ -21,9 +21,9 @@ redirect() {
   fi
 }
 
-BINARY=simd
-BASE_DIR=~/.simapp
-CHAIN_DIR_PREFIX="${BASE_DIR}/simapp"
+BINARY=rollupd
+BASE_DIR=~/.l2app
+CHAIN_DIR_PREFIX="${BASE_DIR}/l2app"
 GENTXS_DIR="${BASE_DIR}/gentxs"
 CHAIN_ID=$1
 MONIKER_PREFIX="node"

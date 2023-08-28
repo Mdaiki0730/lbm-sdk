@@ -27,7 +27,7 @@ var (
 	initClientCtx  = client.Context{...}
 
 	rootCmd = &cobra.Command{
-		Use:   "simd",
+		Use:   "rollupd",
 		Short: "simulation app",
 		PersistentPreRunE: func(cmd *cobra.Command, _ []string) error {
 			if err := client.SetCmdClientContextHandler(initClientCtx, cmd); err != nil {
@@ -91,11 +91,11 @@ func newApp(logger log.Logger, db dbm.DB, traceStore io.Writer, appOpts server.A
 		panic(err)
 	}
 
-	return simapp.NewSimApp(
+	return l2app.NewSimApp(
 		logger, db, traceStore, true, skipUpgradeHeights,
 		cast.ToString(appOpts.Get(flags.FlagHome)),
 		cast.ToUint(appOpts.Get(server.FlagInvCheckPeriod)),
-        simapp.EmptyAppOptions{},
+        l2app.EmptyAppOptions{},
 		nil,
 		baseapp.SetPruning(pruningOpts),
 		baseapp.SetMinGasPrices(cast.ToString(appOpts.Get(server.FlagMinGasPrices))),

@@ -3,7 +3,7 @@ version: "3"
 services:
   cosmos:
     image: rosetta-ci:latest
-    command: ["simd", "start", "--pruning", "nothing", "--grpc-web.enable", "true", "--grpc-web.address", "0.0.0.0:9091"]
+    command: ["rollupd", "start", "--pruning", "nothing", "--grpc-web.enable", "true", "--grpc-web.address", "0.0.0.0:9091"]
     ports:
       - 9090:9090
       - 26657:26657
@@ -13,7 +13,7 @@ services:
   rosetta:
     image: rosetta-ci:latest
     command: [
-      "simd",
+      "rollupd",
       "rosetta",
       "--blockchain", "app",
       "--network", "network",

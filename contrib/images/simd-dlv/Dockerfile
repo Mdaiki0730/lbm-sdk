@@ -9,12 +9,12 @@ RUN LEDGER_ENABLED=false make COSMOS_BUILD_OPTIONS="debug,nostrip" clean build
 
 FROM alpine:3.14 AS run
 RUN apk add bash curl jq
-COPY contrib/images/simd-dlv/wrapper.sh /usr/bin/wrapper.sh
+COPY contrib/images/rollupd-dlv/wrapper.sh /usr/bin/wrapper.sh
 
-VOLUME /simd
-COPY --from=build /work/build/simd /simd/
+VOLUME /rollupd
+COPY --from=build /work/build/rollupd /rollupd/
 COPY --from=build /go/bin/dlv /usr/local/bin
-WORKDIR /simd
+WORKDIR /rollupd
 
 EXPOSE 26656 26657 2345
 ENTRYPOINT ["/usr/bin/wrapper.sh"]
