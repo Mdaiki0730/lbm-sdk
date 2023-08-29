@@ -22,7 +22,7 @@ var (
 )
 
 func GenBatchMaxBytes(r *rand.Rand) uint64 {
-	return uint64(r.Intn(100000*1000000)%1000 + 1)
+	return uint64(r.Intn(10000*10000)%1000 + 1)
 }
 
 // GenerateGenesisState creates a randomized GenState of the module
