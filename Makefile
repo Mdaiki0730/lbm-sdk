@@ -132,6 +132,9 @@ build-docker: go.sum $(BUILDDIR)/
 build-linux:
 	GOOS=linux GOARCH=$(if $(findstring aarch64,$(shell uname -m)) || $(findstring arm64,$(shell uname -m)),arm64,amd64) LEDGER_ENABLED=false $(MAKE) build
 
+build-mips:
+	GOOS=linux GOARCH=mips GOMIPS=softfloat CGO_ENABLED=0 $(MAKE) build
+
 $(BUILD_TARGETS): go.sum $(BUILDDIR)/ $(LIBSODIUM_TARGET)
 	CGO_CFLAGS=$(CGO_CFLAGS) CGO_LDFLAGS=$(CGO_LDFLAGS) CGO_ENABLED=$(CGO_ENABLED) go $@ -mod=readonly $(BUILD_FLAGS) $(BUILD_ARGS) ./...
 
@@ -141,7 +144,7 @@ $(BUILDDIR)/:
 cosmovisor:
 	$(MAKE) -C tools/cosmovisor test
 
-.PHONY: build build-linux cosmovisor
+.PHONY: build build-linux build-mips cosmovisor
 
 mocks: $(MOCKS_DIR)
 	mockgen -source=client/account_retriever.go -package mocks -destination tests/mocks/account_retriever.go
